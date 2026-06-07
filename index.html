@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>外苑前 混雑予測</title>
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    background: #f3f4f6;
+    color: #1f2937;
+  }
+
+  /* ── Sticky top wrapper ── */
+  .sticky-top {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+  }
+
+  /* ── Header ── */
+  .page-header {
+    background: #111827;
+    color: #fff;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .page-header h1 { font-size: 1rem; font-weight: 600; letter-spacing: 0.02em; }
+
+  /* ── Legend ── */
+  .legend {
+    background: #fff;
+    border-bottom: 1px solid #e5e7eb;
+    padding: 6px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    font-size: 0.72rem;
+    color: #374151;
+  }
+  .legend-bottom { border-bottom: none; border-top: 1px solid #e5e7eb; }
+  .legend-item { display: flex; align-items: center; gap: 5px; }
+  .swatch {
+    width: 14px; height: 10px; border-radius: 2px; flex-shrink: 0;
+  }
+  .legend a { color: inherit; text-decoration: underline; text-decoration-style: dotted; }
+  .legend a:hover { color: #2563eb; }
+
+  /* ── Nav buttons ── */
+  .nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    padding: 8px 16px;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .nav button {
+    background: #f9fafb;
+    border: 1px solid #d1d5db;
+    color: #111827;
+    padding: 4px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 500;
+  }
+  .nav button:hover { background: #e5e7eb; }
+  .nav .month-label {
+    font-size: 1rem;
+    font-weight: 700;
+    min-width: 110px;
+    text-align: center;
+  }
+  .nav-bottom {
+    border-top: 1px solid #e5e7eb;
+    border-bottom: none;
+    margin-top: 0;
+  }
+
+  /* ── Gantt wrapper ── */
+  .gantt-scroll {
+    overflow-x: auto;
+    padding: 0;
+  }
+  .gantt-inner {
+    min-width: 720px;
+  }
+
+  /* ── Time header ── */
+  .time-header {
+    display: flex;
+    align-items: stretch;
+    background: #f9fafb;
+    border-bottom: 2px solid #d1d5db;
+  }
+  .time-header-bottom {
+    border-bottom: none;
+    border-top: 2px solid #d1d5db;
+  }
+  .date-col-head {
+    width: 72px;
+    flex-shrink: 0;
+    border-right: 2px solid #d1d5db;
+  }
+  .time-axis-head {
+    flex: 1;
+    position: relative;
+    height: 26px;
+  }
+  .hour-mark {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    border-left: 1px solid #e5e7eb;
+    display: flex;
+    align-items: center;
+    padding-left: 3px;
+    font-size: 0.65rem;
+    color: #6b7280;
+    font-weight: 500;
+    white-space: nowrap;
+    user-select: none;
+  }
+
+  /* ── Day rows ── */
+  .gantt-body { background: #fff; }
+
+  .gantt-row {
+    display: flex;
+    align-items: stretch;
+    border-bottom: 1px solid #e5e7eb;
+  }
+  .gantt-row.weekend-sat { background: #eff6ff; }
+  .gantt-row.weekend-sun { background: #fff1f2; }
+  .gantt-row.weekend-sat .date-col { color: #2563eb; background: #eff6ff; }
+  .gantt-row.weekend-sun .date-col { color: #dc2626; background: #fff1f2; }
+  .gantt-row.today .date-col { background: #fef3c7; font-weight: 700; border-left: 3px solid #f59e0b; }
+
+  .date-col {
+    width: 72px;
+    flex-shrink: 0;
+    font-size: 0.72rem;
+    padding: 3px 6px 3px 8px;
+    border-right: 2px solid #d1d5db;
+    display: flex;
+    align-items: flex-start;
+    line-height: 1.3;
+    background: #fff;
+    position: sticky;
+    left: 0;
+    z-index: 10;
+  }
+
+  .event-area {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
+  /* grid lines in event area */
+  .hour-grid-line {
+    position: absolute;
+    top: 0; bottom: 0;
+    border-left: 1px solid #f3f4f6;
+    pointer-events: none;
+    z-index: 0;
+  }
+  .hour-grid-line.major {
+    border-left-color: #e5e7eb;
+  }
+
+  .empty-row-spacer {
+    height: 10px;
+    width: 100%;
+  }
+
+  /* ── Event bar rows ── */
+  .ev-row {
+    position: relative;
+    height: 24px;
+    flex-shrink: 0;
+  }
+
+  .bar {
+    position: absolute;
+    top: 3px;
+    height: 18px;
+    border-radius: 3px;
+    overflow: hidden;
+    white-space: nowrap;
+    font-size: 0.62rem;
+    line-height: 18px;
+    padding: 0 4px;
+    color: #1f2937;
+    cursor: default;
+    z-index: 1;
+  }
+  .bar-label {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    display: block;
+    width: 100%;
+  }
+
+  /* Venue colors */
+  .venue-rugby  { background: #a855f7; }   /* purple */
+  .venue-jingu  { background: #60a5fa; }   /* blue */
+  .venue-mufg   { background: #f87171; }   /* red  */
+  .venue-seinen { background: #4ade80; }   /* green */
+  .venue-during { background: #d1d5db; color: #374151; } /* grey */
+
+  /* Now line */
+  .now-line {
+    position: absolute;
+    top: 0; bottom: 0;
+    width: 2px;
+    background: #ef4444;
+    z-index: 5;
+    pointer-events: none;
+  }
+  .now-line::before {
+    content: '';
+    position: absolute;
+    top: 1px; left: -4px;
+    width: 10px; height: 10px;
+    background: #ef4444;
+    border-radius: 50%;
+  }
+
+</style>
+</head>
+<body>
+
+<div class="sticky-top">
+  <div class="page-header">
+    <h1>外苑前エリア 混雑予測</h1>
+  </div>
+
+  <div class="legend">
+    <div class="legend-item"><div class="swatch" style="background:#a855f7"></div><a href="https://www.jpnsport.go.jp/chichibunomiya/event/tabid/59/Default.aspx" target="_blank" rel="noopener">秩父宮 混雑</a></div>
+    <div class="legend-item"><div class="swatch" style="background:#60a5fa"></div><a href="https://www.jingu-stadium.com/event/" target="_blank" rel="noopener">神宮球場 混雑</a></div>
+    <div class="legend-item"><div class="swatch" style="background:#f87171"></div><a href="https://jns-e.com/event/" target="_blank" rel="noopener">国立競技場 混雑</a></div>
+    <div class="legend-item"><div class="swatch" style="background:#4ade80"></div><a href="https://seinenkan-hall.com/performance" target="_blank" rel="noopener">青年館 混雑</a></div>
+    <div class="legend-item"><div class="swatch" style="background:#d1d5db"></div>公演中</div>
+    <div style="margin-left:auto; font-size:11px; color:#9ca3af;">イベントデータ更新: <span id="updated-at">—</span></div>
+  </div>
+
+  <div class="nav" id="nav-top">
+    <button id="prev-top">&#8249; 前月</button>
+    <span class="month-label" id="month-label-top"></span>
+    <button id="next-top">翌月 &#8250;</button>
+  </div>
+</div>
+
+<div class="gantt-scroll">
+  <div class="gantt-inner">
+    <div class="time-header">
+      <div class="date-col-head"></div>
+      <div class="time-axis-head" id="time-axis"></div>
+    </div>
+    <div class="gantt-body" id="gantt-body"></div>
+    <div class="time-header time-header-bottom">
+      <div class="date-col-head"></div>
+      <div class="time-axis-head" id="time-axis-bottom"></div>
+    </div>
+  </div>
+</div>
+
+<div class="nav nav-bottom" id="nav-bottom">
+  <button id="prev-bottom">&#8249; 前月</button>
+  <span class="month-label" id="month-label-bottom"></span>
+  <button id="next-bottom">翌月 &#8250;</button>
+</div>
+
+<div class="legend legend-bottom">
+  <div class="legend-item"><div class="swatch" style="background:#a855f7"></div><a href="https://www.jpnsport.go.jp/chichibunomiya/event/tabid/59/Default.aspx" target="_blank" rel="noopener">秩父宮 混雑</a></div>
+  <div class="legend-item"><div class="swatch" style="background:#60a5fa"></div><a href="https://www.jingu-stadium.com/event/" target="_blank" rel="noopener">神宮球場 混雑</a></div>
+  <div class="legend-item"><div class="swatch" style="background:#f87171"></div><a href="https://jns-e.com/event/" target="_blank" rel="noopener">国立競技場 混雑</a></div>
+  <div class="legend-item"><div class="swatch" style="background:#4ade80"></div><a href="https://seinenkan-hall.com/performance" target="_blank" rel="noopener">青年館 混雑</a></div>
+  <div class="legend-item"><div class="swatch" style="background:#d1d5db"></div>公演中</div>
+</div>
+
+<script src="events.js"></script>
+<script>
+const TIME_START = 8;
+const TIME_END   = 24;
+const TOTAL_H    = TIME_END - TIME_START;
+
+const VENUE_COLOR = {
+  rugby:  'venue-rugby',
+  jingu:  'venue-jingu',
+  mufg:   'venue-mufg',
+  seinen: 'venue-seinen',
+};
+const VENUE_NAME = {
+  rugby:  '秩父宮',
+  jingu:  '神宮球場',
+  mufg:   '国立',
+  seinen: '青年館',
+};
+const DOW = ['日','月','火','水','木','金','土'];
+
+// Compute left% and width% from hour values
+function pct(h) { return ((h - TIME_START) / TOTAL_H * 100).toFixed(4) + '%'; }
+function pctW(dur) { return (dur / TOTAL_H * 100).toFixed(4) + '%'; }
+
+// ── 手動管理イベント (青年館: 公式サイトに公演時刻の掲載なし) ──────────────
+// [date, venue, title, open, start, dur]
+const MANUAL_EVENTS = [
+  // 4月
+  ['2026-04-09','seinen','新宿発8時15分',18,19,2.5],
+  ['2026-04-10','seinen','新宿発8時15分',18,19,2.5],
+  ['2026-04-11','seinen','新宿発8時15分 昼',12,13,2.5],
+  ['2026-04-11','seinen','新宿発8時15分 夜',17,18,2.5],
+  ['2026-04-12','seinen','新宿発8時15分 昼',12,13,2.5],
+  ['2026-04-18','seinen','新宿発8時15分 昼',12,13,2.5],
+  ['2026-04-19','seinen','新宿発8時15分 昼',12,13,2.5],
+  ['2026-04-24','seinen','新宿発8時15分 夜',18,19,2.5],
+  ['2026-04-25','seinen','新宿発8時15分 昼',12,13,2.5],
+  ['2026-04-26','seinen','新宿発8時15分 昼',12,13,2.5],
+  // 5月
+  ['2026-05-06','seinen','Musical GYPSY',16,17,2.5],
+  ['2026-05-07','seinen','Musical GYPSY',18,19,2.5],
+  ['2026-05-08','seinen','Musical GYPSY',18,19,2.5],
+  ['2026-05-09','seinen','Musical GYPSY 昼',12,13,2.5],
+  ['2026-05-09','seinen','Musical GYPSY 夜',17,18,2.5],
+  ['2026-05-10','seinen','Musical GYPSY 昼',12,13,2.5],
+  ['2026-05-17','mufg','セイコーGP陸上',12,13,4],  // MUFG: 時刻未定のため手動
+  ['2026-05-30','seinen','明治大マンドリン',14,15,2],
+  ['2026-05-31','seinen','東京マンドリン',13,14,2],
+  // 6月
+  ['2026-06-07','seinen','神経衰弱ぎりぎり…',12,13,2.5],
+  ['2026-06-13','seinen','神経衰弱ぎりぎり…',12,13,2.5],
+  ['2026-06-20','seinen','神経衰弱ぎりぎり…',12,13,2.5],
+  ['2026-06-27','seinen','真心ブラザーズ',17,18,2],
+  // 7月
+  ['2026-07-04','seinen','テニスの王子様 初日',12,13,2.5],
+  ['2026-07-11','seinen','テニスの王子様 千秋楽',12,13,2.5],
+  ['2026-07-14','seinen','虹のコンキスタドール',17,18,2.5],
+  ['2026-07-17','seinen','朗読劇 紫苑のもみじ',17,18,2],
+  ['2026-07-18','seinen','朗読劇 紫苑のもみじ 昼',12,13,2],
+  ['2026-07-19','seinen','朗読劇 紫苑のもみじ',12,13,2],
+  ['2026-07-20','seinen','落合博満 講演会',13,14,2],
+].map(([date, venue, title, open, start, dur]) => ({ date, venue, title, open, start, dur }));
+
+// scraper.js 未実行時のフォールバック (神宮/国立/秩父宮 の手入力データ)
+const FALLBACK_EVENTS = [
+  // 秩父宮
+  {date:'2026-04-05',venue:'rugby',title:'BR東京 vs 神戸S',open:12.5,start:13,dur:1.5},
+  {date:'2026-04-12',venue:'rugby',title:'東日本大学セブンズ',open:9,start:10,dur:8},
+  {date:'2026-04-17',venue:'rugby',title:'三重H vs BR東京',open:17.5,start:19,dur:1.5},
+  {date:'2026-04-24',venue:'rugby',title:'浦安DR vs 静岡BR',open:17.5,start:19,dur:1.5},
+  {date:'2026-04-25',venue:'rugby',title:'BL東京 vs 横浜E',open:12.5,start:14,dur:1.5},
+  {date:'2026-04-26',venue:'rugby',title:'BR東京 vs トヨタV',open:12.5,start:14,dur:1.5},
+  {date:'2026-05-01',venue:'rugby',title:'浦安DR vs 埼玉WK',open:17.5,start:19,dur:1.5},
+  {date:'2026-05-02',venue:'rugby',title:'BL東京 vs 静岡BR',open:12.5,start:14,dur:1.5},
+  {date:'2026-05-03',venue:'rugby',title:'横浜E vs 相模原DB',open:12.5,start:14,dur:1.5},
+  {date:'2026-05-10',venue:'rugby',title:'東京SG vs BR東京',open:12.5,start:14,dur:1.5},
+  {date:'2026-07-04',venue:'rugby',title:'ネーションズ 日本vsイタリア',open:13,start:14,dur:2},
+  // 国立競技場
+  {date:'2026-04-04',venue:'mufg',title:'ONE OK ROCK',open:15.5,start:17.5,dur:2.5},
+  {date:'2026-04-05',venue:'mufg',title:'ONE OK ROCK',open:15.5,start:17.5,dur:2.5},
+  {date:'2026-04-11',venue:'mufg',title:'櫻坂46',open:15,start:17.5,dur:2.5},
+  {date:'2026-04-12',venue:'mufg',title:'櫻坂46',open:15,start:17.5,dur:2.5},
+  {date:'2026-04-18',venue:'mufg',title:'Mrs. GREEN APPLE',open:16.5,start:18.5,dur:2.5},
+  {date:'2026-04-19',venue:'mufg',title:'Mrs. GREEN APPLE',open:16.5,start:18.5,dur:2.5},
+  {date:'2026-04-25',venue:'mufg',title:'TWICE',open:15,start:18,dur:2.5},
+  {date:'2026-04-26',venue:'mufg',title:'TWICE',open:14,start:17,dur:2.5},
+  {date:'2026-04-28',venue:'mufg',title:'TWICE',open:15,start:18,dur:2.5},
+  {date:'2026-05-22',venue:'mufg',title:'J1 FC町田 vs 浦和',open:18,start:19.5,dur:2},
+  {date:'2026-05-24',venue:'mufg',title:'J1 清水 vs G大阪',open:15.5,start:17,dur:2},
+  {date:'2026-05-31',venue:'mufg',title:'キリンCC 日本vsアイスランド',open:18,start:19.42,dur:2},
+  {date:'2026-07-04',venue:'mufg',title:'【FC会員限定公演】間奏編',open:16.5,start:18.5,dur:2.5},
+  {date:'2026-07-05',venue:'mufg',title:'【FC会員限定公演】間奏編',open:16.5,start:18.5,dur:2.5},
+  // 神宮球場 (抜粋: プロ野球のみ)
+  {date:'2026-04-01',venue:'jingu',title:'東京ヤクルト vs 広島',open:17,start:18,dur:3},
+  {date:'2026-04-02',venue:'jingu',title:'東京ヤクルト vs 広島',open:17,start:18,dur:3},
+  {date:'2026-04-03',venue:'jingu',title:'東京ヤクルト vs 中日',open:17,start:18,dur:3},
+  {date:'2026-04-04',venue:'jingu',title:'東京ヤクルト vs 中日',open:13,start:14,dur:3},
+  {date:'2026-04-05',venue:'jingu',title:'東京ヤクルト vs 中日',open:12.5,start:13.5,dur:3},
+  {date:'2026-04-16',venue:'jingu',title:'東京ヤクルト vs 横浜DeNA',open:17,start:18,dur:3},
+  {date:'2026-04-17',venue:'jingu',title:'東京ヤクルト vs 巨人',open:17,start:18,dur:3},
+  {date:'2026-04-18',venue:'jingu',title:'東京ヤクルト vs 巨人',open:17,start:18,dur:3},
+  {date:'2026-04-19',venue:'jingu',title:'東京ヤクルト vs 巨人',open:17,start:18,dur:3},
+  {date:'2026-04-28',venue:'jingu',title:'東京ヤクルト vs 阪神',open:17,start:18,dur:3},
+  {date:'2026-04-29',venue:'jingu',title:'東京ヤクルト vs 阪神',open:13,start:14,dur:3},
+  {date:'2026-04-30',venue:'jingu',title:'東京ヤクルト vs 阪神',open:17,start:18,dur:3},
+];
+
+// events.js (scraper.js の出力) が読み込まれていればそちらを使用、なければフォールバック
+const ALL_EVENTS = [
+  ...(window.SCRAPED_EVENTS || FALLBACK_EVENTS),
+  ...MANUAL_EVENTS,
+];
+
+// 更新日時表示
+const updatedEl = document.getElementById('updated-at');
+if (updatedEl) {
+  updatedEl.textContent = window.SCRAPED_EVENTS_UPDATED || 'データなし';
+}
+
+// Group by date
+function eventsForDate(dateStr) {
+  return ALL_EVENTS.filter(e => e.date === dateStr);
+}
+
+function pad(n) { return String(n).padStart(2, '0'); }
+function fmtH(h) {
+  const hh = Math.floor(h), mm = Math.round((h - hh) * 60);
+  return `${hh}:${pad(mm)}`;
+}
+function toDateStr(y, m, d) { return `${y}-${pad(m)}-${pad(d)}`; }
+
+// ── Render ───────────────────────────────────────────────────────────────────
+
+let curYear  = 2026;
+let curMonth = 4;
+
+(function initMonth() {
+  const t = new Date();
+  curYear  = t.getFullYear();
+  curMonth = t.getMonth() + 1;
+})();
+
+function todayStr() {
+  const t = new Date();
+  return toDateStr(t.getFullYear(), t.getMonth() + 1, t.getDate());
+}
+
+function buildTimeAxis() {
+  ['time-axis', 'time-axis-bottom'].forEach(id => {
+    const axis = document.getElementById(id);
+    if (!axis) return;
+    axis.innerHTML = '';
+    for (let h = TIME_START; h < TIME_END; h++) {
+      const mark = document.createElement('div');
+      mark.className = 'hour-mark';
+      mark.style.left = pct(h);
+      mark.textContent = h + ':00';
+      axis.appendChild(mark);
+    }
+  });
+}
+
+function makeBar(left, width, cls, labelText, tooltip) {
+  const bar = document.createElement('div');
+  bar.className = 'bar ' + cls;
+  bar.style.left  = left;
+  bar.style.width = width;
+  bar.title       = tooltip;
+  const span = document.createElement('span');
+  span.className = 'bar-label';
+  span.textContent = labelText;
+  bar.appendChild(span);
+  return bar;
+}
+
+function renderGantt() {
+  const today = todayStr();
+  const body = document.getElementById('gantt-body');
+  body.innerHTML = '';
+
+  const daysInMonth = new Date(curYear, curMonth, 0).getDate();
+
+  for (let d = 1; d <= daysInMonth; d++) {
+    const dateStr = toDateStr(curYear, curMonth, d);
+    const dow     = new Date(curYear, curMonth - 1, d).getDay();
+    const dayEvs  = eventsForDate(dateStr);
+
+    const row = document.createElement('div');
+    row.className = 'gantt-row'
+      + (dateStr === today ? ' today' : '')
+      + (dow === 6 ? ' weekend-sat' : dow === 0 ? ' weekend-sun' : '');
+    row.dataset.date = dateStr;
+
+    // Date label
+    const dateCol = document.createElement('div');
+    dateCol.className = 'date-col';
+    dateCol.textContent = `${d}(${DOW[dow]})`;
+    row.appendChild(dateCol);
+
+    // Event area
+    const area = document.createElement('div');
+    area.className = 'event-area';
+
+    // Hour grid lines
+    for (let h = TIME_START + 1; h < TIME_END; h++) {
+      const gl = document.createElement('div');
+      gl.className = 'hour-grid-line' + (h % 3 === 0 ? ' major' : '');
+      gl.style.left = pct(h);
+      area.appendChild(gl);
+    }
+
+    if (dayEvs.length === 0) {
+      const spacer = document.createElement('div');
+      spacer.className = 'empty-row-spacer';
+      area.appendChild(spacer);
+    } else {
+      for (const ev of dayEvs) {
+        const arrS  = ev.open - 0.5;
+        const arrE  = ev.start;
+        const durS  = ev.start;
+        const durE  = ev.start + ev.dur;
+        const depS  = durE;
+        const depE  = Math.min(durE + 1.0, TIME_END);
+
+        // Clamp to visible range
+        const visArrS = Math.max(arrS, TIME_START);
+        const visArrE = Math.min(arrE, TIME_END);
+        const visDurS = Math.max(durS, TIME_START);
+        const visDurE = Math.min(durE, TIME_END);
+        const visDepS = Math.max(depS, TIME_START);
+        const visDepE = Math.min(depE, TIME_END);
+
+        const vn    = VENUE_NAME[ev.venue];
+        const cc    = VENUE_COLOR[ev.venue];
+        const evRow = document.createElement('div');
+        evRow.className = 'ev-row';
+
+        // Arrive bar
+        if (visArrE > visArrS) {
+          evRow.appendChild(makeBar(
+            pct(visArrS), pctW(visArrE - visArrS),
+            'bar ' + cc,
+            `入場`,
+            `[${vn}] ${ev.title} 入場混雑 ${fmtH(arrS)}〜${fmtH(arrE)}`
+          ));
+        }
+
+        // During bar (greyed)
+        if (visDurE > visDurS) {
+          evRow.appendChild(makeBar(
+            pct(visDurS), pctW(visDurE - visDurS),
+            'bar venue-during',
+            ev.title,
+            `[${vn}] ${ev.title} 公演中 ${fmtH(durS)}〜${fmtH(durE)}`
+          ));
+        }
+
+        // Depart bar
+        if (visDepE > visDepS) {
+          evRow.appendChild(makeBar(
+            pct(visDepS), pctW(visDepE - visDepS),
+            'bar ' + cc,
+            `退場`,
+            `[${vn}] ${ev.title} 退場混雑 ${fmtH(depS)}〜${fmtH(depE)}`
+          ));
+        }
+
+        area.appendChild(evRow);
+      }
+    }
+
+    row.appendChild(area);
+    body.appendChild(row);
+  }
+}
+
+function updateLabels() {
+  const txt = `${curYear}年${curMonth}月`;
+  document.getElementById('month-label-top').textContent    = txt;
+  document.getElementById('month-label-bottom').textContent = txt;
+}
+
+function prevMonth() {
+  curMonth--;
+  if (curMonth < 1) { curMonth = 12; curYear--; }
+  updateLabels(); renderGantt(); renderNowLine();
+}
+function nextMonth() {
+  curMonth++;
+  if (curMonth > 12) { curMonth = 1; curYear++; }
+  updateLabels(); renderGantt(); renderNowLine();
+}
+
+function renderNowLine() {
+  document.querySelectorAll('.now-line').forEach(el => el.remove());
+
+  const now = new Date();
+  if (curYear !== now.getFullYear() || curMonth !== now.getMonth() + 1) return;
+
+  const h = now.getHours() + now.getMinutes() / 60;
+  if (h < TIME_START || h >= TIME_END) return;
+
+  const dateStr = toDateStr(now.getFullYear(), now.getMonth() + 1, now.getDate());
+  const row = document.querySelector(`.gantt-row[data-date="${dateStr}"]`);
+  if (!row) return;
+
+  const area = row.querySelector('.event-area');
+  const line = document.createElement('div');
+  line.className = 'now-line';
+  line.style.left = pct(h);
+  area.appendChild(line);
+}
+
+document.getElementById('prev-top').addEventListener('click', prevMonth);
+document.getElementById('next-top').addEventListener('click', nextMonth);
+document.getElementById('prev-bottom').addEventListener('click', prevMonth);
+document.getElementById('next-bottom').addEventListener('click', nextMonth);
+
+buildTimeAxis();
+updateLabels();
+renderGantt();
+renderNowLine();
+setInterval(renderNowLine, 60000);
+</script>
+</body>
+</html>
