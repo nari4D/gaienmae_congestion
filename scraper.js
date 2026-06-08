@@ -132,8 +132,8 @@ async function scrapeMUFG() {
       const isSports = raw.includes('スポーツ');
       const dur = isSports ? 2.0 : 2.5;
 
-      // 日付 ("span class="date">MM/DD")
-      const dateParts = [...raw.matchAll(/<span class="date">(\d{2})\/(\d{2})<\/span>/g)];
+      // 日付 ("span class="date">MM/DD" or "YYYYMM/DD曜日")
+      const dateParts = [...raw.matchAll(/<span class="date">(?:\d{4})?(\d{2})\/(\d{2})[^<]*<\/span>/g)];
       if (!dateParts.length) continue;
 
       const dates = dateParts.map(dp => {
@@ -168,14 +168,12 @@ async function scrapeMUFG() {
         } else if (sportsM) {
           start = toH(sportsM[1]);
           open  = start - 1.0; // 開場時間は公表なし→キックオフ1時間前と推定
-        } else {
-          continue; // "未定" などはスキップ
         }
-        if (open === null || start === null) continue;
+        // 時刻未掲載でも日付だけ登録 (start=null で表示)
 
         for (const { y, mo, da } of dates) {
           if (!inTargetRange(y, mo)) continue;
-          events.push({ date: dateStr(y, mo, da), venue: 'mufg', title, open, start, dur });
+          events.push({ date: dateStr(y, mo, da), venue: 'mufg', title, open, start, dur: start !== null ? dur : null });
           count++;
         }
       }
