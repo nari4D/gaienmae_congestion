@@ -218,6 +218,11 @@
   .venue-mufg   { background: #f87171; }   /* red  */
   .venue-seinen { background: #4ade80; }   /* green */
   .venue-during { background: #d1d5db; color: #374151; } /* grey */
+  .venue-tbd {
+    background: repeating-linear-gradient(90deg, #e5e7eb 0px, #e5e7eb 6px, #f9fafb 6px, #f9fafb 12px);
+    color: #9ca3af;
+    font-style: italic;
+  }
 
   /* Now line */
   .now-line {
@@ -526,6 +531,18 @@ function renderGantt() {
         const cc    = VENUE_COLOR[ev.venue];
         const evRow = document.createElement('div');
         evRow.className = 'ev-row';
+
+        // 時刻未掲載
+        if (ev.start === null) {
+          evRow.appendChild(makeBar(
+            pct(TIME_START), pctW(TIME_END - TIME_START),
+            'bar venue-tbd',
+            `${ev.title}（時刻未掲載）`,
+            `[${vn}] ${ev.title} 時刻未掲載`
+          ));
+          area.appendChild(evRow);
+          continue;
+        }
 
         // Arrive bar
         if (visArrE > visArrS) {
