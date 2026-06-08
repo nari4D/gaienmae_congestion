@@ -1,6 +1,6 @@
-// 自動生成 — 2026/6/9 7:51:33
+// 自動生成 — 2026/6/9 8:04:24
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/6/9 7:51:33";
+window.SCRAPED_EVENTS_UPDATED = "2026/6/9 8:04:24";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-06-01",
@@ -155,6 +155,14 @@ window.SCRAPED_EVENTS = [
     "dur": 4
   },
   {
+    "date": "2026-06-13",
+    "venue": "mufg",
+    "title": "JリーグオールスターDAZNカップ",
+    "open": null,
+    "start": null,
+    "dur": null
+  },
+  {
     "date": "2026-06-14",
     "venue": "jingu",
     "title": "第75回全日本大学野球選手権記念大会",
@@ -257,6 +265,14 @@ window.SCRAPED_EVENTS = [
     "open": 17,
     "start": 18,
     "dur": 3
+  },
+  {
+    "date": "2026-06-27",
+    "venue": "mufg",
+    "title": "第2回 イチローDREAM FIELD DAY",
+    "open": null,
+    "start": null,
+    "dur": null
   },
   {
     "date": "2026-06-28",
