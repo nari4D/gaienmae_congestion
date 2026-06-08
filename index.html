@@ -53,6 +53,13 @@
   .legend a { color: inherit; text-decoration: underline; text-decoration-style: dotted; }
   .legend a:hover { color: #2563eb; }
 
+  /* ── Sticky time axis ── */
+  .sticky-time-wrapper {
+    overflow: hidden;
+    background: #f9fafb;
+    border-bottom: 2px solid #d1d5db;
+  }
+
   /* ── Nav buttons ── */
   .nav {
     display: flex;
@@ -264,6 +271,14 @@
     <span class="month-label" id="month-label-top"></span>
     <button id="next-top">翌月 &#8250;</button>
   </div>
+  <div class="sticky-time-wrapper">
+    <div class="gantt-inner">
+      <div class="time-header" style="border-bottom:none;">
+        <div class="date-col-head"></div>
+        <div class="time-axis-head" id="time-axis-sticky"></div>
+      </div>
+    </div>
+  </div>
 </div>
 
 <div class="gantt-scroll">
@@ -448,7 +463,7 @@ function todayStr() {
 }
 
 function buildTimeAxis() {
-  ['time-axis', 'time-axis-bottom'].forEach(id => {
+  ['time-axis', 'time-axis-bottom', 'time-axis-sticky'].forEach(id => {
     const axis = document.getElementById(id);
     if (!axis) return;
     axis.innerHTML = '';
@@ -461,6 +476,11 @@ function buildTimeAxis() {
     }
   });
 }
+
+// 横スクロール同期
+document.querySelector('.gantt-scroll').addEventListener('scroll', function () {
+  document.querySelector('.sticky-time-wrapper').scrollLeft = this.scrollLeft;
+});
 
 function makeBar(left, width, cls, labelText, tooltip) {
   const bar = document.createElement('div');
