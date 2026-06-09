@@ -1,6 +1,6 @@
-// 自動生成 — 2026/6/9 8:13:36
+// 自動生成 — 2026/6/9 22:00:02
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/6/9 8:13:36";
+window.SCRAPED_EVENTS_UPDATED = "2026/6/9 22:00:02";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-06-01",
