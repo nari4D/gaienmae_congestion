@@ -1,6 +1,6 @@
-// 自動生成 — 2026/6/11 18:00:02
+// 自動生成 — 2026/6/12 18:00:02
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/6/11 18:00:02";
+window.SCRAPED_EVENTS_UPDATED = "2026/6/12 18:00:02";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-06-01",
@@ -528,6 +528,14 @@ window.SCRAPED_EVENTS = [
     "title": "2026　神宮外苑花火大会",
     "open": 19,
     "start": 19.5,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-08-08",
+    "venue": "rugby",
+    "title": "2026 神宮外苑花火大会(第 45 回大会)",
+    "open": 15,
+    "start": 16,
     "dur": 1.5
   },
   {
