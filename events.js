@@ -1,6 +1,6 @@
-// 自動生成 — 2026/6/15 18:00:03
+// 自動生成 — 2026/6/16 18:00:02
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/6/15 18:00:03";
+window.SCRAPED_EVENTS_UPDATED = "2026/6/16 18:00:02";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-06-01",
@@ -348,6 +348,14 @@ window.SCRAPED_EVENTS = [
   },
   {
     "date": "2026-07-04",
+    "venue": "jingu",
+    "title": "第108回全国高等学校野球選手権大会　東西東京大会　　開会式",
+    "open": 8.5,
+    "start": 9,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-07-04",
     "venue": "mufg",
     "title": "【FC会員限定公演】ゼンジン未到とイ/ミュータブル～間奏編～",
     "open": 16.5,
@@ -372,6 +380,14 @@ window.SCRAPED_EVENTS = [
   },
   {
     "date": "2026-07-05",
+    "venue": "jingu",
+    "title": "第108回全国高等学校野球選手権大会　東東京大会",
+    "open": 8,
+    "start": 8.5,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-07-05",
     "venue": "mufg",
     "title": "【FC会員限定公演】ゼンジン未到とイ/ミュータブル～間奏編～",
     "open": 16.5,
@@ -387,11 +403,59 @@ window.SCRAPED_EVENTS = [
     "dur": 1.5
   },
   {
+    "date": "2026-07-06",
+    "venue": "jingu",
+    "title": "第108回全国高等学校野球選手権大会　東東京大会",
+    "open": 8,
+    "start": 8.5,
+    "dur": 1.5
+  },
+  {
     "date": "2026-07-07",
     "venue": "jingu",
     "title": "第97回都市対抗野球大会　東京都二次予選",
     "open": 18,
     "start": 18.5,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-07-07",
+    "venue": "jingu",
+    "title": "第108回全国高等学校野球選手権大会　東東京大会",
+    "open": 8,
+    "start": 8.5,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-07-08",
+    "venue": "jingu",
+    "title": "第108回全国高等学校野球選手権大会　東東京大会",
+    "open": 8,
+    "start": 8.5,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-07-09",
+    "venue": "jingu",
+    "title": "第108回全国高等学校野球選手権大会　東東京大会",
+    "open": 8,
+    "start": 8.5,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-07-10",
+    "venue": "jingu",
+    "title": "第108回全国高等学校野球選手権大会　東東京大会",
+    "open": 8,
+    "start": 8.5,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-07-11",
+    "venue": "jingu",
+    "title": "第108回全国高等学校野球選手権大会　東東京大会",
+    "open": 8,
+    "start": 8.5,
     "dur": 1.5
   },
   {
@@ -403,12 +467,36 @@ window.SCRAPED_EVENTS = [
     "dur": 1.5
   },
   {
+    "date": "2026-07-12",
+    "venue": "jingu",
+    "title": "第108回全国高等学校野球選手権大会　東東京大会",
+    "open": 8,
+    "start": 8.5,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-07-13",
+    "venue": "jingu",
+    "title": "第108回全国高等学校野球選手権大会　東東京大会",
+    "open": 8,
+    "start": 8.5,
+    "dur": 1.5
+  },
+  {
     "date": "2026-07-14",
     "venue": "jingu",
     "title": "東京ヤクルト vs 巨人",
     "open": 17,
     "start": 18,
     "dur": 3
+  },
+  {
+    "date": "2026-07-14",
+    "venue": "jingu",
+    "title": "第108回全国高等学校野球選手権大会　東東京大会",
+    "open": 8,
+    "start": 8.5,
+    "dur": 1.5
   },
   {
     "date": "2026-07-15",
@@ -419,12 +507,44 @@ window.SCRAPED_EVENTS = [
     "dur": 3
   },
   {
+    "date": "2026-07-15",
+    "venue": "jingu",
+    "title": "第108回全国高等学校野球選手権大会　東東京大会",
+    "open": 8,
+    "start": 8.5,
+    "dur": 1.5
+  },
+  {
     "date": "2026-07-16",
     "venue": "jingu",
     "title": "東京ヤクルト vs 巨人",
     "open": 17,
     "start": 18,
     "dur": 3
+  },
+  {
+    "date": "2026-07-16",
+    "venue": "jingu",
+    "title": "第108回全国高等学校野球選手権大会　東東京大会",
+    "open": 8,
+    "start": 8.5,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-07-17",
+    "venue": "jingu",
+    "title": "第108回全国高等学校野球選手権大会　東東京大会",
+    "open": 8,
+    "start": 8.5,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-07-18",
+    "venue": "jingu",
+    "title": "第108回全国高等学校野球選手権大会　東東京大会",
+    "open": 8,
+    "start": 8.5,
+    "dur": 1.5
   },
   {
     "date": "2026-07-18",
@@ -435,12 +555,28 @@ window.SCRAPED_EVENTS = [
     "dur": 2
   },
   {
+    "date": "2026-07-19",
+    "venue": "jingu",
+    "title": "第108回全国高等学校野球選手権大会　東東京大会",
+    "open": 8,
+    "start": 8.5,
+    "dur": 1.5
+  },
+  {
     "date": "2026-07-20",
     "venue": "jingu",
     "title": "東京ヤクルト vs 中日",
     "open": 17,
     "start": 18,
     "dur": 3
+  },
+  {
+    "date": "2026-07-20",
+    "venue": "jingu",
+    "title": "第108回全国高等学校野球選手権大会　西東京大会",
+    "open": 8,
+    "start": 8.5,
+    "dur": 1.5
   },
   {
     "date": "2026-07-21",
@@ -451,12 +587,36 @@ window.SCRAPED_EVENTS = [
     "dur": 3
   },
   {
+    "date": "2026-07-21",
+    "venue": "jingu",
+    "title": "第108回全国高等学校野球選手権大会　西東京大会",
+    "open": 8,
+    "start": 8.5,
+    "dur": 1.5
+  },
+  {
     "date": "2026-07-22",
     "venue": "jingu",
     "title": "東京ヤクルト vs 中日",
     "open": 17,
     "start": 18,
     "dur": 3
+  },
+  {
+    "date": "2026-07-22",
+    "venue": "jingu",
+    "title": "第108回全国高等学校野球選手権大会　東東京大会",
+    "open": 8,
+    "start": 8.5,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-07-23",
+    "venue": "jingu",
+    "title": "第108回全国高等学校野球選手権大会　東東京大会",
+    "open": 8.5,
+    "start": 9,
+    "dur": 1.5
   },
   {
     "date": "2026-07-24",
@@ -467,7 +627,31 @@ window.SCRAPED_EVENTS = [
     "dur": 3
   },
   {
+    "date": "2026-07-24",
+    "venue": "jingu",
+    "title": "第108回全国高等学校野球選手権大会　西東京大会",
+    "open": 8.5,
+    "start": 9,
+    "dur": 1.5
+  },
+  {
     "date": "2026-07-25",
+    "venue": "jingu",
+    "title": "東京ヤクルト vs 広島",
+    "open": 17,
+    "start": 18,
+    "dur": 3
+  },
+  {
+    "date": "2026-07-25",
+    "venue": "jingu",
+    "title": "第108回全国高等学校野球選手権大会　東東京大会",
+    "open": 8.5,
+    "start": 9,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-07-26",
     "venue": "jingu",
     "title": "東京ヤクルト vs 広島",
     "open": 17,
@@ -477,10 +661,18 @@ window.SCRAPED_EVENTS = [
   {
     "date": "2026-07-26",
     "venue": "jingu",
-    "title": "東京ヤクルト vs 広島",
-    "open": 17,
-    "start": 18,
-    "dur": 3
+    "title": "第108回全国高等学校野球選手権大会　西東京大会",
+    "open": 9.5,
+    "start": 10,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-07-27",
+    "venue": "jingu",
+    "title": "第108回全国高等学校野球選手権大会　東東京大会",
+    "open": 9.5,
+    "start": 10,
+    "dur": 1.5
   },
   {
     "date": "2026-07-28",
