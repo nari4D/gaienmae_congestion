@@ -1,6 +1,6 @@
-// 自動生成 — 2026/6/23 18:00:02
+// 自動生成 — 2026/6/24 18:00:04
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/6/23 18:00:02";
+window.SCRAPED_EVENTS_UPDATED = "2026/6/24 18:00:04";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-06-01",
@@ -787,6 +787,38 @@ window.SCRAPED_EVENTS = [
     "dur": 3
   },
   {
+    "date": "2026-08-20",
+    "venue": "jingu",
+    "title": "乃木坂46 真夏の全国ツアー2026",
+    "open": null,
+    "start": null,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-08-21",
+    "venue": "jingu",
+    "title": "乃木坂46 真夏の全国ツアー2026",
+    "open": null,
+    "start": null,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-08-22",
+    "venue": "jingu",
+    "title": "乃木坂46 真夏の全国ツアー2026",
+    "open": null,
+    "start": null,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-08-23",
+    "venue": "jingu",
+    "title": "乃木坂46 真夏の全国ツアー2026",
+    "open": null,
+    "start": null,
+    "dur": 1.5
+  },
+  {
     "date": "2026-08-25",
     "venue": "jingu",
     "title": "東京ヤクルト vs 巨人",
@@ -816,6 +848,14 @@ window.SCRAPED_EVENTS = [
     "title": "JINGU STADIUM NIGHT YOGA",
     "open": 19,
     "start": 19.5,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-08-29",
+    "venue": "jingu",
+    "title": "「侍ジャパンU-18壮行試合」 高校日本代表対大学日本代表",
+    "open": 17.5,
+    "start": 18,
     "dur": 1.5
   },
   {
