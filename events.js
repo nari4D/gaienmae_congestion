@@ -1,6 +1,6 @@
-// 自動生成 — 2026/6/24 18:00:04
+// 自動生成 — 2026/6/25 18:00:03
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/6/24 18:00:04";
+window.SCRAPED_EVENTS_UPDATED = "2026/6/25 18:00:03";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-06-01",
@@ -251,12 +251,28 @@ window.SCRAPED_EVENTS = [
     "dur": 1.5
   },
   {
+    "date": "2026-06-25",
+    "venue": "jingu",
+    "title": "東都大学春季入替戦",
+    "open": 8.5,
+    "start": 9,
+    "dur": 1.5
+  },
+  {
     "date": "2026-06-26",
     "venue": "jingu",
     "title": "東京ヤクルト vs 中日",
     "open": 17,
     "start": 18,
     "dur": 3
+  },
+  {
+    "date": "2026-06-26",
+    "venue": "jingu",
+    "title": "東都大学春季入替戦",
+    "open": 8.5,
+    "start": 9,
+    "dur": 1.5
   },
   {
     "date": "2026-06-27",
