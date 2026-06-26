@@ -1,6 +1,6 @@
-// 自動生成 — 2026/6/25 18:00:03
+// 自動生成 — 2026/6/26 18:00:02
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/6/25 18:00:03";
+window.SCRAPED_EVENTS_UPDATED = "2026/6/26 18:00:02";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-06-01",
@@ -731,6 +731,14 @@ window.SCRAPED_EVENTS = [
     "dur": 1.5
   },
   {
+    "date": "2026-08-07",
+    "venue": "mufg",
+    "title": "２０２６／２７明治安田Ｊリーグ「MUFG THE国立DAY」第1節：横浜F・マリノス vs 鹿島アントラーズ",
+    "open": 18.5,
+    "start": 19.5,
+    "dur": 2
+  },
+  {
     "date": "2026-08-08",
     "venue": "jingu",
     "title": "2026　神宮外苑花火大会",
@@ -787,6 +795,14 @@ window.SCRAPED_EVENTS = [
     "dur": 3
   },
   {
+    "date": "2026-08-14",
+    "venue": "mufg",
+    "title": "２０２６／２７明治安田Ｊリーグ「MUFG THE国立DAY」第2節：東京ヴェルディ vs 柏レイソル",
+    "open": 18,
+    "start": 19,
+    "dur": 2
+  },
+  {
     "date": "2026-08-15",
     "venue": "jingu",
     "title": "東京ヤクルト vs 横浜DeNA",
@@ -819,6 +835,14 @@ window.SCRAPED_EVENTS = [
     "dur": 1.5
   },
   {
+    "date": "2026-08-21",
+    "venue": "mufg",
+    "title": "２０２６／２７明治安田Ｊリーグ「MUFG THE国立DAY」第3節：FC東京 vs ジェフユナイテッド千葉",
+    "open": 18.5,
+    "start": 19.5,
+    "dur": 2
+  },
+  {
     "date": "2026-08-22",
     "venue": "jingu",
     "title": "乃木坂46 真夏の全国ツアー2026",
@@ -833,6 +857,14 @@ window.SCRAPED_EVENTS = [
     "open": null,
     "start": null,
     "dur": 1.5
+  },
+  {
+    "date": "2026-08-23",
+    "venue": "mufg",
+    "title": "２０２６／２７明治安田Ｊリーグ「MUFG THE国立DAY」第3節：FC町田ゼルビア vs 浦和レッズ",
+    "open": 18.5,
+    "start": 19.5,
+    "dur": 2
   },
   {
     "date": "2026-08-25",
