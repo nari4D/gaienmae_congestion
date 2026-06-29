@@ -1,6 +1,6 @@
-// 自動生成 — 2026/6/28 18:00:02
+// 自動生成 — 2026/6/29 18:00:04
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/6/28 18:00:02";
+window.SCRAPED_EVENTS_UPDATED = "2026/6/29 18:00:04";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-06-01",
@@ -409,6 +409,14 @@ window.SCRAPED_EVENTS = [
     "open": 16.5,
     "start": 18.5,
     "dur": 2.5
+  },
+  {
+    "date": "2026-07-05",
+    "venue": "rugby",
+    "title": "第13回関東大学ラグビーオールスターゲーム2026",
+    "open": 13,
+    "start": 14,
+    "dur": 6
   },
   {
     "date": "2026-07-06",
