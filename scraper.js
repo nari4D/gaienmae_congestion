@@ -108,32 +108,31 @@ async function scrapeMUFG() {
 
   for (const { year, month } of targetMonths) {
     const ym  = `${year}${pad(month)}`;
-    // 今月は /event/、それ以外は /event/page/YYYYMM/
-    const isCurrentMonth = year === now.getFullYear() && month === now.getMonth() + 1;
-    const url = isCurrentMonth ? 'https://jns-e.com/event/' : `https://jns-e.com/event/page/${ym}/`;
+    const url = `https://jns-e.com/event/page/${ym}/`;
 
     let html;
     try { html = await fetchText(url); }
     catch (e) { console.warn(`  ${year}/${pad(month)}: スキップ (${e.message})`); continue; }
 
     // /event/xxxx/ へのリンクを持つ <li><a> ブロックを抽出
-    const items = [...html.matchAll(/<li><a href="\/event\/[^"]+">[\s\S]*?<\/a><\/li>/g)];
+    const items = [...html.matchAll(/<li>\s*<a href="\/event\/[^"]+">[\s\S]*?<\/a>\s*<\/li>/g)];
     let count = 0;
 
     for (const item of items) {
       const raw  = item[0];
       const text = raw.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').trim();
 
-      // タイトル
-      const titleM = raw.match(/class="p-event-list__head"[^>]*>([\s\S]*?)<\/p>/);
+      // タイトル (class="p-event-list__head" または <h3>)
+      const titleM = raw.match(/class="p-event-list__head"[^>]*>([\s\S]*?)<\/p>/)
+                  || raw.match(/<h3[^>]*>([\s\S]*?)<\/h3>/);
       const title  = titleM ? titleM[1].replace(/<[^>]+>/g, '').trim() : '';
       if (!title) continue;
 
       const isSports = raw.includes('スポーツ');
       const dur = isSports ? 2.0 : 2.5;
 
-      // 日付 ("span class="date">MM/DD" or "YYYYMM/DD曜日")
-      const dateParts = [...raw.matchAll(/<span class="date">(?:\d{4})?(\d{2})\/(\d{2})[^<]*<\/span>/g)];
+      // 日付 (span or div, "MM/DD" or "YYYYMM/DD曜日")
+      const dateParts = [...raw.matchAll(/<(?:span|div) class="date">(?:\d{4})?(\d{2})\/(\d{2})[^<]*<\/(?:span|div)>/g)];
       if (!dateParts.length) continue;
 
       const dates = dateParts.map(dp => {
