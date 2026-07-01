@@ -1,6 +1,6 @@
-// 自動生成 — 2026/7/1 18:00:02
+// 自動生成 — 2026/7/2 7:31:49
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/7/1 18:00:02";
+window.SCRAPED_EVENTS_UPDATED = "2026/7/2 7:31:49";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-07-01",
@@ -44,6 +44,14 @@ window.SCRAPED_EVENTS = [
   },
   {
     "date": "2026-07-04",
+    "venue": "mufg",
+    "title": "【FC会員限定公演】ゼンジン未到とイ/ミュータブル～間奏編～",
+    "open": 16.5,
+    "start": 18.5,
+    "dur": 2.5
+  },
+  {
+    "date": "2026-07-04",
     "venue": "rugby",
     "title": "ネーションズチャンピオンシップ2026 日本代表 vs イタリア代表",
     "open": 15.5,
@@ -65,6 +73,14 @@ window.SCRAPED_EVENTS = [
     "open": 8,
     "start": 8.5,
     "dur": 1.5
+  },
+  {
+    "date": "2026-07-05",
+    "venue": "mufg",
+    "title": "【FC会員限定公演】ゼンジン未到とイ/ミュータブル～間奏編～",
+    "open": 16.5,
+    "start": 18.5,
+    "dur": 2.5
   },
   {
     "date": "2026-07-05",
@@ -225,6 +241,14 @@ window.SCRAPED_EVENTS = [
     "open": 8,
     "start": 8.5,
     "dur": 1.5
+  },
+  {
+    "date": "2026-07-18",
+    "venue": "mufg",
+    "title": "ネーションズチャンピオンシップ2026 日本代表vsフランス代表",
+    "open": 16.666666666666668,
+    "start": 17.666666666666668,
+    "dur": 2
   },
   {
     "date": "2026-07-19",
