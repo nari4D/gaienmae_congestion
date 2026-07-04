@@ -1,6 +1,6 @@
-// 自動生成 — 2026/7/3 18:00:05
+// 自動生成 — 2026/7/4 18:00:03
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/7/3 18:00:05";
+window.SCRAPED_EVENTS_UPDATED = "2026/7/4 18:00:03";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-07-01",
@@ -587,6 +587,22 @@ window.SCRAPED_EVENTS = [
     "dur": 1.5
   },
   {
+    "date": "2026-08-29",
+    "venue": "mufg",
+    "title": "Stray Kids World Tour ＜RUN IT JAPAN＞",
+    "open": 15.5,
+    "start": 17.5,
+    "dur": 2.5
+  },
+  {
+    "date": "2026-08-30",
+    "venue": "mufg",
+    "title": "Stray Kids World Tour ＜RUN IT JAPAN＞",
+    "open": 15.5,
+    "start": 17.5,
+    "dur": 2.5
+  },
+  {
     "date": "2026-09-01",
     "venue": "jingu",
     "title": "東京ヤクルト vs 阪神",
@@ -649,6 +665,14 @@ window.SCRAPED_EVENTS = [
     "open": 17,
     "start": 18,
     "dur": 3
+  },
+  {
+    "date": "2026-09-13",
+    "venue": "mufg",
+    "title": "第4回 MUFGスタジアムENJOYリレーマラソン supported by ぴあ",
+    "open": null,
+    "start": null,
+    "dur": null
   },
   {
     "date": "2026-09-14",
