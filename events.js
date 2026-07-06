@@ -1,6 +1,6 @@
-// 自動生成 — 2026/7/5 18:00:02
+// 自動生成 — 2026/7/6 18:00:03
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/7/5 18:00:02";
+window.SCRAPED_EVENTS_UPDATED = "2026/7/6 18:00:03";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-07-01",
@@ -451,12 +451,28 @@ window.SCRAPED_EVENTS = [
     "dur": 3
   },
   {
+    "date": "2026-08-11",
+    "venue": "jingu",
+    "title": "第73回全国高等学校定時制通信制軟式野球大会",
+    "open": 9.666666666666666,
+    "start": 10.166666666666666,
+    "dur": 1.5
+  },
+  {
     "date": "2026-08-12",
     "venue": "jingu",
     "title": "東京ヤクルト vs 広島",
     "open": 17,
     "start": 18,
     "dur": 3
+  },
+  {
+    "date": "2026-08-12",
+    "venue": "jingu",
+    "title": "第73回全国高等学校定時制通信制軟式野球大会",
+    "open": 7.5,
+    "start": 8,
+    "dur": 1.5
   },
   {
     "date": "2026-08-13",
@@ -467,12 +483,28 @@ window.SCRAPED_EVENTS = [
     "dur": 3
   },
   {
+    "date": "2026-08-13",
+    "venue": "jingu",
+    "title": "第73回全国高等学校定時制通信制軟式野球大会",
+    "open": 7.5,
+    "start": 8,
+    "dur": 1.5
+  },
+  {
     "date": "2026-08-14",
     "venue": "jingu",
     "title": "東京ヤクルト vs 横浜DeNA",
     "open": 17,
     "start": 18,
     "dur": 3
+  },
+  {
+    "date": "2026-08-14",
+    "venue": "jingu",
+    "title": "第73回全国高等学校定時制通信制軟式野球大会",
+    "open": 7.5,
+    "start": 8,
+    "dur": 1.5
   },
   {
     "date": "2026-08-14",
@@ -489,6 +521,14 @@ window.SCRAPED_EVENTS = [
     "open": 17,
     "start": 18,
     "dur": 3
+  },
+  {
+    "date": "2026-08-15",
+    "venue": "jingu",
+    "title": "第73回全国高等学校定時制通信制軟式野球大会",
+    "open": 8.5,
+    "start": 9,
+    "dur": 1.5
   },
   {
     "date": "2026-08-16",
@@ -651,12 +691,28 @@ window.SCRAPED_EVENTS = [
     "dur": 3
   },
   {
+    "date": "2026-09-06",
+    "venue": "mufg",
+    "title": "２０２６／２７明治安田Ｊリーグ「MUFG THE国立DAY」第6節：川崎フロンターレ vs 清水エスパルス",
+    "open": null,
+    "start": null,
+    "dur": null
+  },
+  {
     "date": "2026-09-09",
     "venue": "jingu",
     "title": "JINGU STADIUM NIGHT YOGA",
     "open": 19,
     "start": 19.5,
     "dur": 1.5
+  },
+  {
+    "date": "2026-09-12",
+    "venue": "mufg",
+    "title": "２０２６／２７明治安田Ｊリーグ「MUFG THE国立DAY」第7節：FC町田ゼルビア vs 横浜F・マリノス",
+    "open": null,
+    "start": null,
+    "dur": null
   },
   {
     "date": "2026-09-13",
@@ -691,6 +747,14 @@ window.SCRAPED_EVENTS = [
     "dur": 1.5
   },
   {
+    "date": "2026-09-19",
+    "venue": "mufg",
+    "title": "２０２６／２７明治安田Ｊリーグ「MUFG THE国立DAY」第8節：FC東京 vs 名古屋グランパス",
+    "open": null,
+    "start": null,
+    "dur": null
+  },
+  {
     "date": "2026-09-22",
     "venue": "jingu",
     "title": "東京ヤクルト vs 阪神",
@@ -718,6 +782,14 @@ window.SCRAPED_EVENTS = [
     "date": "2026-10-18",
     "venue": "mufg",
     "title": "東京レガシーハーフマラソン2026",
+    "open": null,
+    "start": null,
+    "dur": null
+  },
+  {
+    "date": "2026-10-21",
+    "venue": "mufg",
+    "title": "２０２６／２７明治安田Ｊリーグ「MUFG THE国立DAY」第11節：横浜F・マリノス vs 東京ヴェルディ",
     "open": null,
     "start": null,
     "dur": null
