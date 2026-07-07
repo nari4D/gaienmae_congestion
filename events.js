@@ -1,6 +1,6 @@
-// 自動生成 — 2026/7/6 18:00:03
+// 自動生成 — 2026/7/7 18:00:03
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/7/6 18:00:03";
+window.SCRAPED_EVENTS_UPDATED = "2026/7/7 18:00:03";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-07-01",
@@ -413,7 +413,7 @@ window.SCRAPED_EVENTS = [
   {
     "date": "2026-08-07",
     "venue": "mufg",
-    "title": "２０２６／２７明治安田Ｊリーグ「MUFG THE国立DAY」第1節：横浜F・マリノス vs 鹿島アントラーズ",
+    "title": "２０２６／２７明治安田Ｊ１リーグ「MUFG THE国立DAY」第1節：横浜F・マリノス vs 鹿島アントラーズ",
     "open": 18.5,
     "start": 19.5,
     "dur": 2
@@ -509,7 +509,7 @@ window.SCRAPED_EVENTS = [
   {
     "date": "2026-08-14",
     "venue": "mufg",
-    "title": "２０２６／２７明治安田Ｊリーグ「MUFG THE国立DAY」第2節：東京ヴェルディ vs 柏レイソル",
+    "title": "２０２６／２７明治安田Ｊ１リーグ「MUFG THE国立DAY」第2節：東京ヴェルディ vs 柏レイソル",
     "open": 18,
     "start": 19,
     "dur": 2
@@ -539,6 +539,14 @@ window.SCRAPED_EVENTS = [
     "dur": 3
   },
   {
+    "date": "2026-08-16",
+    "venue": "mufg",
+    "title": "２０２６／２７明治安田Ｊ２リーグ「MUFG THE国立DAY」第2節：横浜FC vs ジュビロ磐田",
+    "open": 17,
+    "start": 18,
+    "dur": 2
+  },
+  {
     "date": "2026-08-20",
     "venue": "jingu",
     "title": "乃木坂46 真夏の全国ツアー2026",
@@ -557,7 +565,7 @@ window.SCRAPED_EVENTS = [
   {
     "date": "2026-08-21",
     "venue": "mufg",
-    "title": "２０２６／２７明治安田Ｊリーグ「MUFG THE国立DAY」第3節：FC東京 vs ジェフユナイテッド千葉",
+    "title": "２０２６／２７明治安田Ｊ１リーグ「MUFG THE国立DAY」第3節：FC東京 vs ジェフユナイテッド千葉",
     "open": 18.5,
     "start": 19.5,
     "dur": 2
@@ -581,7 +589,7 @@ window.SCRAPED_EVENTS = [
   {
     "date": "2026-08-23",
     "venue": "mufg",
-    "title": "２０２６／２７明治安田Ｊリーグ「MUFG THE国立DAY」第3節：FC町田ゼルビア vs 浦和レッズ",
+    "title": "２０２６／２７明治安田Ｊ１リーグ「MUFG THE国立DAY」第3節：FC町田ゼルビア vs 浦和レッズ",
     "open": 18.5,
     "start": 19.5,
     "dur": 2
@@ -693,7 +701,7 @@ window.SCRAPED_EVENTS = [
   {
     "date": "2026-09-06",
     "venue": "mufg",
-    "title": "２０２６／２７明治安田Ｊリーグ「MUFG THE国立DAY」第6節：川崎フロンターレ vs 清水エスパルス",
+    "title": "２０２６／２７明治安田Ｊ１リーグ「MUFG THE国立DAY」第6節：川崎フロンターレ vs 清水エスパルス",
     "open": null,
     "start": null,
     "dur": null
@@ -709,7 +717,7 @@ window.SCRAPED_EVENTS = [
   {
     "date": "2026-09-12",
     "venue": "mufg",
-    "title": "２０２６／２７明治安田Ｊリーグ「MUFG THE国立DAY」第7節：FC町田ゼルビア vs 横浜F・マリノス",
+    "title": "２０２６／２７明治安田Ｊ１リーグ「MUFG THE国立DAY」第7節：FC町田ゼルビア vs 横浜F・マリノス",
     "open": null,
     "start": null,
     "dur": null
@@ -749,7 +757,7 @@ window.SCRAPED_EVENTS = [
   {
     "date": "2026-09-19",
     "venue": "mufg",
-    "title": "２０２６／２７明治安田Ｊリーグ「MUFG THE国立DAY」第8節：FC東京 vs 名古屋グランパス",
+    "title": "２０２６／２７明治安田Ｊ１リーグ「MUFG THE国立DAY」第8節：FC東京 vs 名古屋グランパス",
     "open": null,
     "start": null,
     "dur": null
@@ -789,7 +797,7 @@ window.SCRAPED_EVENTS = [
   {
     "date": "2026-10-21",
     "venue": "mufg",
-    "title": "２０２６／２７明治安田Ｊリーグ「MUFG THE国立DAY」第11節：横浜F・マリノス vs 東京ヴェルディ",
+    "title": "２０２６／２７明治安田Ｊ１リーグ「MUFG THE国立DAY」第11節：横浜F・マリノス vs 東京ヴェルディ",
     "open": null,
     "start": null,
     "dur": null
