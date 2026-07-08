@@ -1,6 +1,6 @@
-// 自動生成 — 2026/7/7 18:00:03
+// 自動生成 — 2026/7/8 18:00:02
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/7/7 18:00:03";
+window.SCRAPED_EVENTS_UPDATED = "2026/7/8 18:00:02";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-07-01",
@@ -169,6 +169,14 @@ window.SCRAPED_EVENTS = [
     "open": 8,
     "start": 8.5,
     "dur": 1.5
+  },
+  {
+    "date": "2026-07-12",
+    "venue": "rugby",
+    "title": "なの花薬局ジャパンセブンズ2026",
+    "open": 9,
+    "start": 9.5,
+    "dur": 6
   },
   {
     "date": "2026-07-13",
@@ -387,12 +395,28 @@ window.SCRAPED_EVENTS = [
     "dur": 3
   },
   {
+    "date": "2026-07-31",
+    "venue": "jingu",
+    "title": "エイジェックカップ 第54回日本リトルシニア日本選手権大会 開会式",
+    "open": 10.5,
+    "start": 11,
+    "dur": 1.5
+  },
+  {
     "date": "2026-08-01",
     "venue": "jingu",
     "title": "東京ヤクルト vs 阪神",
     "open": 17,
     "start": 18,
     "dur": 3
+  },
+  {
+    "date": "2026-08-01",
+    "venue": "jingu",
+    "title": "エイジェックカップ 第54回日本リトルシニア日本選手権大会",
+    "open": 7.5,
+    "start": 8,
+    "dur": 1.5
   },
   {
     "date": "2026-08-02",
@@ -403,6 +427,14 @@ window.SCRAPED_EVENTS = [
     "dur": 3
   },
   {
+    "date": "2026-08-02",
+    "venue": "jingu",
+    "title": "エイジェックカップ 第54回日本リトルシニア日本選手権大会",
+    "open": 7.5,
+    "start": 8,
+    "dur": 1.5
+  },
+  {
     "date": "2026-08-03",
     "venue": "jingu",
     "title": "JINGU STADIUM NIGHT YOGA",
@@ -411,11 +443,35 @@ window.SCRAPED_EVENTS = [
     "dur": 1.5
   },
   {
+    "date": "2026-08-03",
+    "venue": "jingu",
+    "title": "エイジェックカップ 第54回日本リトルシニア日本選手権大会",
+    "open": 7.5,
+    "start": 8,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-08-05",
+    "venue": "jingu",
+    "title": "エイジェックカップ 第54回日本リトルシニア日本選手権大会",
+    "open": 8.5,
+    "start": 9,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-08-06",
+    "venue": "jingu",
+    "title": "エイジェックカップ 第54回日本リトルシニア日本選手権大会",
+    "open": 8.5,
+    "start": 9,
+    "dur": 1.5
+  },
+  {
     "date": "2026-08-07",
     "venue": "mufg",
     "title": "２０２６／２７明治安田Ｊ１リーグ「MUFG THE国立DAY」第1節：横浜F・マリノス vs 鹿島アントラーズ",
-    "open": 18.5,
-    "start": 19.5,
+    "open": 18.416666666666668,
+    "start": 19.416666666666668,
     "dur": 2
   },
   {
@@ -457,6 +513,14 @@ window.SCRAPED_EVENTS = [
     "open": 9.666666666666666,
     "start": 10.166666666666666,
     "dur": 1.5
+  },
+  {
+    "date": "2026-08-11",
+    "venue": "mufg",
+    "title": "第77回早慶サッカー定期戦 -早慶クラシコ- presented by 洞雲汽船株式会社",
+    "open": 17,
+    "start": 18,
+    "dur": 2
   },
   {
     "date": "2026-08-12",
