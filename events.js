@@ -1,6 +1,6 @@
-// 自動生成 — 2026/7/10 18:00:02
+// 自動生成 — 2026/7/10 20:58:01
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/7/10 18:00:02";
+window.SCRAPED_EVENTS_UPDATED = "2026/7/10 20:58:01";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-07-01",
@@ -417,6 +417,14 @@ window.SCRAPED_EVENTS = [
     "open": 7.5,
     "start": 8,
     "dur": 1.5
+  },
+  {
+    "date": "2026-08-01",
+    "venue": "mufg",
+    "title": "国際親善試合　FC東京 vs ボルシア ドルトムント",
+    "open": 18,
+    "start": 19,
+    "dur": 2
   },
   {
     "date": "2026-08-02",
