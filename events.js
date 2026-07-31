@@ -1,6 +1,6 @@
-// 自動生成 — 2026/7/30 18:00:02
+// 自動生成 — 2026/7/31 18:00:02
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/7/30 18:00:02";
+window.SCRAPED_EVENTS_UPDATED = "2026/7/31 18:00:02";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-07-01",
@@ -704,6 +704,14 @@ window.SCRAPED_EVENTS = [
     "title": "JINGU STADIUM NIGHT YOGA",
     "open": 19,
     "start": 19.5,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-08-28",
+    "venue": "jingu",
+    "title": "第4回エイジェックカップ　中学硬式野球グランドチャンピオンシリーズ",
+    "open": 13,
+    "start": 13.5,
     "dur": 1.5
   },
   {
