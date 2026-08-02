@@ -192,7 +192,7 @@ async function scrapeChichibunomiya() {
 
   for (const row of rows) {
     const dateM = row[0].match(/(\d{4})\/(\d{2})\/(\d{2})/);
-    const linkM = row[0].match(/href="([^"]+eid=\d+[^"]*)"/);
+    const linkM = row[0].match(/href="([^"]+(?:&amp;|&)?eid=\d+[^"]*)"/);
     const nameM = row[0].match(/<a[^>]*>([\s\S]*?)<\/a>/);
     if (!dateM || !linkM) continue;
 
@@ -200,8 +200,9 @@ async function scrapeChichibunomiya() {
     const evY = parseInt(y), evM = parseInt(m), evD = parseInt(d);
     if (!inTargetRange(evY, evM)) continue;
 
-    const title = nameM ? nameM[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim() : '';
-    const url   = linkM[1].startsWith('http') ? linkM[1] : `https://www.jpnsport.go.jp${linkM[1]}`;
+    const title  = nameM ? nameM[1].replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim() : '';
+    const rawUrl = linkM[1].replace(/&amp;/g, '&');
+    const url    = rawUrl.startsWith('http') ? rawUrl : `https://www.jpnsport.go.jp${rawUrl}`;
     links.push({ date: dateStr(evY, evM, evD), url, title });
   }
 
@@ -213,7 +214,7 @@ async function scrapeChichibunomiya() {
       const text   = detail.replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ');
 
       const openM  = text.match(/開場時間\s*([\d：:時]+|未定)/);
-      const startM = text.match(/開始時間\s*([\d：:時]+)/);
+      const startM = text.match(/開始時間[\s\S]*?(\d{1,2}[：:]\d{2})/);
 
       const start = startM ? toH(startM[1]) : null;
       let   open  = openM && openM[1] !== '未定' ? toH(openM[1]) : null;
