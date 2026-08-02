@@ -218,9 +218,17 @@ async function scrapeChichibunomiya() {
 
       const start = startM ? toH(startM[1]) : null;
       let   open  = openM && openM[1] !== '未定' ? toH(openM[1]) : null;
-      if (start !== null && open === null) open = start - 0.5; // 開場時間未定の場合
+      if (start !== null && open === null) open = start - 0.5;
 
-      return { date, venue: 'rugby', title, open, start };
+      // 開始時間以降に複数試合がある場合は最後の時刻を終了推定に使う
+      let lastStart = start;
+      if (startM) {
+        const afterStart = text.substring(text.indexOf(startM[0]));
+        const allTimes = [...afterStart.matchAll(/\d{1,2}[：:]\d{2}/g)].map(m => toH(m[0])).filter(h => h !== null);
+        if (allTimes.length > 0) lastStart = Math.max(...allTimes);
+      }
+
+      return { date, venue: 'rugby', title, open, start, lastStart };
     } catch { return null; }
   }));
 
@@ -228,7 +236,8 @@ async function scrapeChichibunomiya() {
   for (const ev of results) {
     if (!ev || ev.start === null) continue;
     const isUniversity = ev.title.includes('大学') || ev.title.includes('セブンズ');
-    const dur = isUniversity ? 6.0 : 1.5;
+    const baseDur = isUniversity ? 6.0 : 2.0;
+    const dur = ev.lastStart > ev.start ? (ev.lastStart - ev.start + 2.0) : baseDur;
     events.push({ date: ev.date, venue: 'rugby', title: ev.title, open: ev.open, start: ev.start, dur });
   }
   console.log(`[秩父宮] ${events.length}件`);
