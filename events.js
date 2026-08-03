@@ -1,6 +1,6 @@
-// 自動生成 — 2026/8/2 18:00:03
+// 自動生成 — 2026/8/3 18:00:02
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/8/2 18:00:03";
+window.SCRAPED_EVENTS_UPDATED = "2026/8/3 18:00:02";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-08-01",
@@ -404,6 +404,14 @@ window.SCRAPED_EVENTS = [
   },
   {
     "date": "2026-09-12",
+    "venue": "jingu",
+    "title": "東京六大学野球秋季リーグ戦",
+    "open": 10.5,
+    "start": 11,
+    "dur": 4
+  },
+  {
+    "date": "2026-09-12",
     "venue": "mufg",
     "title": "２０２６／２７明治安田Ｊ１リーグ「MUFG THE国立DAY」第7節：FC町田ゼルビア vs 横浜F・マリノス",
     "open": 18,
@@ -417,6 +425,14 @@ window.SCRAPED_EVENTS = [
     "open": 17,
     "start": 18,
     "dur": 3
+  },
+  {
+    "date": "2026-09-13",
+    "venue": "jingu",
+    "title": "東京六大学野球秋季リーグ戦",
+    "open": 9.5,
+    "start": 10,
+    "dur": 4
   },
   {
     "date": "2026-09-13",
@@ -437,6 +453,14 @@ window.SCRAPED_EVENTS = [
   {
     "date": "2026-09-19",
     "venue": "jingu",
+    "title": "東京六大学野球秋季リーグ戦",
+    "open": 10.5,
+    "start": 11,
+    "dur": 4
+  },
+  {
+    "date": "2026-09-19",
+    "venue": "jingu",
     "title": "JINGU STADIUM NIGHT YOGA",
     "open": 19,
     "start": 19.5,
@@ -449,6 +473,14 @@ window.SCRAPED_EVENTS = [
     "open": 18,
     "start": 19,
     "dur": 2
+  },
+  {
+    "date": "2026-09-20",
+    "venue": "jingu",
+    "title": "東京六大学野球秋季リーグ戦",
+    "open": 10.5,
+    "start": 11,
+    "dur": 4
   },
   {
     "date": "2026-09-22",
@@ -467,12 +499,52 @@ window.SCRAPED_EVENTS = [
     "dur": 3
   },
   {
+    "date": "2026-09-26",
+    "venue": "jingu",
+    "title": "東京六大学野球秋季リーグ戦",
+    "open": 10.5,
+    "start": 11,
+    "dur": 4
+  },
+  {
+    "date": "2026-09-27",
+    "venue": "jingu",
+    "title": "東京六大学野球秋季リーグ戦",
+    "open": 10.5,
+    "start": 11,
+    "dur": 4
+  },
+  {
+    "date": "2026-10-03",
+    "venue": "jingu",
+    "title": "東京六大学野球秋季リーグ戦",
+    "open": 10.5,
+    "start": 11,
+    "dur": 4
+  },
+  {
+    "date": "2026-10-04",
+    "venue": "jingu",
+    "title": "東京六大学野球秋季リーグ戦",
+    "open": 10.5,
+    "start": 11,
+    "dur": 4
+  },
+  {
     "date": "2026-10-05",
     "venue": "mufg",
     "title": "キリンカップサッカー2026",
     "open": null,
     "start": null,
     "dur": null
+  },
+  {
+    "date": "2026-10-10",
+    "venue": "jingu",
+    "title": "東京六大学野球秋季リーグ戦",
+    "open": 10.5,
+    "start": 11,
+    "dur": 4
   },
   {
     "date": "2026-10-10",
@@ -484,11 +556,35 @@ window.SCRAPED_EVENTS = [
   },
   {
     "date": "2026-10-11",
+    "venue": "jingu",
+    "title": "東京六大学野球秋季リーグ戦",
+    "open": 10.5,
+    "start": 11,
+    "dur": 4
+  },
+  {
+    "date": "2026-10-11",
     "venue": "mufg",
     "title": "みんなでつなごうリレーフェスティバル2026",
     "open": 9.5,
     "start": 10.5,
     "dur": 2
+  },
+  {
+    "date": "2026-10-17",
+    "venue": "jingu",
+    "title": "東京六大学野球秋季リーグ戦",
+    "open": 10.5,
+    "start": 11,
+    "dur": 4
+  },
+  {
+    "date": "2026-10-18",
+    "venue": "jingu",
+    "title": "東京六大学野球秋季リーグ戦",
+    "open": 10.5,
+    "start": 11,
+    "dur": 4
   },
   {
     "date": "2026-10-18",
@@ -507,6 +603,54 @@ window.SCRAPED_EVENTS = [
     "dur": 2
   },
   {
+    "date": "2026-10-24",
+    "venue": "jingu",
+    "title": "東京六大学野球秋季リーグ戦",
+    "open": 12.5,
+    "start": 13,
+    "dur": 4
+  },
+  {
+    "date": "2026-10-25",
+    "venue": "jingu",
+    "title": "東京六大学野球秋季リーグ戦",
+    "open": 12.5,
+    "start": 13,
+    "dur": 4
+  },
+  {
+    "date": "2026-10-31",
+    "venue": "jingu",
+    "title": "東京六大学野球秋季リーグ戦",
+    "open": 12.5,
+    "start": 13,
+    "dur": 4
+  },
+  {
+    "date": "2026-11-01",
+    "venue": "jingu",
+    "title": "東京六大学野球秋季リーグ戦",
+    "open": 12.5,
+    "start": 13,
+    "dur": 4
+  },
+  {
+    "date": "2026-11-07",
+    "venue": "jingu",
+    "title": "東京六大学野球秋季リーグ戦",
+    "open": 12.5,
+    "start": 13,
+    "dur": 4
+  },
+  {
+    "date": "2026-11-08",
+    "venue": "jingu",
+    "title": "東京六大学野球秋季リーグ戦",
+    "open": 12.5,
+    "start": 13,
+    "dur": 4
+  },
+  {
     "date": "2026-11-08",
     "venue": "mufg",
     "title": "２０２６／２７明治安田Ｊ１リーグ「MUFG THE国立DAY」第14節：ヴィッセル神戸 vs 浦和レッズ",
@@ -515,11 +659,67 @@ window.SCRAPED_EVENTS = [
     "dur": 2
   },
   {
+    "date": "2026-11-14",
+    "venue": "jingu",
+    "title": "明治神宮外苑創建百年記念奉納試合",
+    "open": null,
+    "start": null,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-11-19",
+    "venue": "jingu",
+    "title": "第五十七回　明治神宮野球大会",
+    "open": null,
+    "start": null,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-11-20",
+    "venue": "jingu",
+    "title": "第五十七回　明治神宮野球大会",
+    "open": null,
+    "start": null,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-11-21",
+    "venue": "jingu",
+    "title": "第五十七回　明治神宮野球大会",
+    "open": null,
+    "start": null,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-11-22",
+    "venue": "jingu",
+    "title": "第五十七回　明治神宮野球大会",
+    "open": null,
+    "start": null,
+    "dur": 1.5
+  },
+  {
     "date": "2026-11-22",
     "venue": "mufg",
     "title": "日清食品カップ 第42回全国小学生陸上競技交流大会",
     "open": null,
     "start": null,
     "dur": null
+  },
+  {
+    "date": "2026-11-23",
+    "venue": "jingu",
+    "title": "第五十七回　明治神宮野球大会",
+    "open": null,
+    "start": null,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-11-24",
+    "venue": "jingu",
+    "title": "第五十七回　明治神宮野球大会",
+    "open": null,
+    "start": null,
+    "dur": 1.5
   }
 ];
