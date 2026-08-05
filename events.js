@@ -1,6 +1,6 @@
-// 自動生成 — 2026/8/4 18:00:07
+// 自動生成 — 2026/8/5 18:00:03
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/8/4 18:00:07";
+window.SCRAPED_EVENTS_UPDATED = "2026/8/5 18:00:03";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-08-01",
@@ -467,6 +467,14 @@ window.SCRAPED_EVENTS = [
     "dur": 3
   },
   {
+    "date": "2026-09-17",
+    "venue": "jingu",
+    "title": "東京ヤクルト vs 横浜DeNA",
+    "open": 17,
+    "start": 18,
+    "dur": 3
+  },
+  {
     "date": "2026-09-19",
     "venue": "jingu",
     "title": "東京六大学野球秋季リーグ戦",
@@ -515,11 +523,27 @@ window.SCRAPED_EVENTS = [
     "dur": 3
   },
   {
+    "date": "2026-09-25",
+    "venue": "jingu",
+    "title": "東京ヤクルト vs 中日",
+    "open": 17,
+    "start": 18,
+    "dur": 3
+  },
+  {
+    "date": "2026-09-26",
+    "venue": "jingu",
+    "title": "東京ヤクルト vs 中日",
+    "open": 17,
+    "start": 18,
+    "dur": 3
+  },
+  {
     "date": "2026-09-26",
     "venue": "jingu",
     "title": "東京六大学野球秋季リーグ戦",
-    "open": 10.5,
-    "start": 11,
+    "open": 9.5,
+    "start": 10,
     "dur": 4
   },
   {
@@ -529,6 +553,14 @@ window.SCRAPED_EVENTS = [
     "open": 10.5,
     "start": 11,
     "dur": 4
+  },
+  {
+    "date": "2026-10-02",
+    "venue": "jingu",
+    "title": "東京ヤクルト vs 巨人",
+    "open": 17,
+    "start": 18,
+    "dur": 3
   },
   {
     "date": "2026-10-03",
