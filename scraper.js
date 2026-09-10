@@ -20,9 +20,13 @@ const OUT_FILE = path.join(__dirname, 'events.js');
 // ── 対象月を決定 ─────────────────────────────────────────────────────────────
 const args = process.argv.slice(2);
 const now  = new Date();
-const startYear  = args[0] ? parseInt(args[0]) : now.getFullYear();
-const startMonth = args[1] ? parseInt(args[1]) : now.getMonth() + 1;
-const monthCount = args[2] ? parseInt(args[2]) : 4;
+// デフォルト: 2ヶ月前から6ヶ月分 (過去データが消えないよう)
+let defaultYear  = now.getFullYear();
+let defaultMonth = now.getMonth() + 1 - 2; // 2ヶ月前
+if (defaultMonth <= 0) { defaultMonth += 12; defaultYear--; }
+const startYear  = args[0] ? parseInt(args[0]) : defaultYear;
+const startMonth = args[1] ? parseInt(args[1]) : defaultMonth;
+const monthCount = args[2] ? parseInt(args[2]) : 6;
 
 const targetMonths = [];
 for (let i = 0; i < monthCount; i++) {
