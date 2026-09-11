@@ -1,6 +1,6 @@
-// 自動生成 — 2026/9/11 8:24:56
+// 自動生成 — 2026/9/11 18:00:03
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/9/11 8:24:56";
+window.SCRAPED_EVENTS_UPDATED = "2026/9/11 18:00:03";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-07-01",
@@ -942,7 +942,7 @@ window.SCRAPED_EVENTS = [
     "date": "2026-09-19",
     "venue": "rugby",
     "title": "アサヒスーパードライ パシフィックネーションズカップ2026 3位決定戦・決勝",
-    "open": 15.5,
+    "open": 14,
     "start": 16,
     "dur": 5.083333333333332
   },
@@ -1176,7 +1176,7 @@ window.SCRAPED_EVENTS = [
     "title": "リポビタンDチャレンジカップ2026 日本ラグビーフットボール協会設立100周年記念試合男子日本代表 vs フィジー代表女子日本代表 vs ウェールズ代表",
     "open": 14.333333333333334,
     "start": 14.833333333333334,
-    "dur": 2
+    "dur": 5.666666666666666
   },
   {
     "date": "2026-10-25",
