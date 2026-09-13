@@ -1,6 +1,6 @@
-// 自動生成 — 2026/9/12 18:00:02
+// 自動生成 — 2026/9/13 18:00:03
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/9/12 18:00:02";
+window.SCRAPED_EVENTS_UPDATED = "2026/9/13 18:00:03";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-07-01",
@@ -881,6 +881,14 @@ window.SCRAPED_EVENTS = [
     "open": 17,
     "start": 18,
     "dur": 3
+  },
+  {
+    "date": "2026-09-14",
+    "venue": "jingu",
+    "title": "東京六大学野球秋季リーグ戦",
+    "open": 11.5,
+    "start": 12,
+    "dur": 4
   },
   {
     "date": "2026-09-15",
