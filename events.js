@@ -1,6 +1,6 @@
-// 自動生成 — 2026/9/13 18:00:03
+// 自動生成 — 2026/9/15 18:00:03
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/9/13 18:00:03";
+window.SCRAPED_EVENTS_UPDATED = "2026/9/15 18:00:03";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-07-01",
@@ -1017,6 +1017,14 @@ window.SCRAPED_EVENTS = [
     "open": 9.5,
     "start": 10,
     "dur": 4
+  },
+  {
+    "date": "2026-09-26",
+    "venue": "mufg",
+    "title": "ALPEN RUN presents 国立競技場リレーマラソン",
+    "open": null,
+    "start": null,
+    "dur": null
   },
   {
     "date": "2026-09-27",
