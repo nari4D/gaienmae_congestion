@@ -1,6 +1,6 @@
-// 自動生成 — 2026/9/16 18:00:03
+// 自動生成 — 2026/9/17 18:00:02
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/9/16 18:00:03";
+window.SCRAPED_EVENTS_UPDATED = "2026/9/17 18:00:02";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-07-01",
@@ -1259,12 +1259,28 @@ window.SCRAPED_EVENTS = [
     "dur": 2
   },
   {
+    "date": "2026-11-08",
+    "venue": "rugby",
+    "title": "全国高等学校ラグビーフットボール大会 東京都予選【決勝】",
+    "open": 11,
+    "start": 11.5,
+    "dur": 3.833333333333334
+  },
+  {
     "date": "2026-11-14",
     "venue": "jingu",
     "title": "明治神宮外苑創建百年記念奉納試合",
     "open": null,
     "start": null,
     "dur": 1.5
+  },
+  {
+    "date": "2026-11-14",
+    "venue": "rugby",
+    "title": "秩父宮みなとラグビーまつり2026東京サントリーサンゴリアス vs チーフス",
+    "open": 12,
+    "start": 14,
+    "dur": 2
   },
   {
     "date": "2026-11-15",
@@ -1385,6 +1401,22 @@ window.SCRAPED_EVENTS = [
     "open": 11,
     "start": 11.5,
     "dur": 4.5
+  },
+  {
+    "date": "2026-12-12",
+    "venue": "mufg",
+    "title": "2026 MUSIC BANK GLOBAL FESTIVAL IN JAPAN",
+    "open": null,
+    "start": null,
+    "dur": null
+  },
+  {
+    "date": "2026-12-13",
+    "venue": "mufg",
+    "title": "2026 MUSIC BANK GLOBAL FESTIVAL IN JAPAN",
+    "open": null,
+    "start": null,
+    "dur": null
   },
   {
     "date": "2026-12-19",
