@@ -1,6 +1,6 @@
-// 自動生成 — 2026/9/28 18:00:02
+// 自動生成 — 2026/9/29 18:00:02
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/9/28 18:00:02";
+window.SCRAPED_EVENTS_UPDATED = "2026/9/29 18:00:02";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-07-01",
@@ -1115,6 +1115,14 @@ window.SCRAPED_EVENTS = [
     "dur": 4.5
   },
   {
+    "date": "2026-11-05",
+    "venue": "jingu",
+    "title": "秋季東京都高等学校野球大会",
+    "open": 15.5,
+    "start": 16,
+    "dur": 1.5
+  },
+  {
     "date": "2026-11-07",
     "venue": "jingu",
     "title": "東京六大学野球秋季リーグ戦",
@@ -1142,8 +1150,8 @@ window.SCRAPED_EVENTS = [
     "date": "2026-11-14",
     "venue": "jingu",
     "title": "明治神宮外苑創建百年記念奉納試合",
-    "open": null,
-    "start": null,
+    "open": 12.5,
+    "start": 13,
     "dur": 1.5
   },
   {
