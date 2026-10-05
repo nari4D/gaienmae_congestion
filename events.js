@@ -1,6 +1,6 @@
-// 自動生成 — 2026/10/4 18:00:03
+// 自動生成 — 2026/10/5 18:00:02
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/10/4 18:00:03";
+window.SCRAPED_EVENTS_UPDATED = "2026/10/5 18:00:02";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-08-01",
@@ -793,6 +793,14 @@ window.SCRAPED_EVENTS = [
     "open": 11,
     "start": 11.5,
     "dur": 3.833333333333334
+  },
+  {
+    "date": "2026-11-13",
+    "venue": "jingu",
+    "title": "JINGU STADIUM 100年ランタン",
+    "open": 18.5,
+    "start": 19,
+    "dur": 1.5
   },
   {
     "date": "2026-11-14",
