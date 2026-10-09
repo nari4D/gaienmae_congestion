@@ -1,6 +1,6 @@
-// 自動生成 — 2026/10/8 18:00:03
+// 自動生成 — 2026/10/9 18:00:03
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/10/8 18:00:03";
+window.SCRAPED_EVENTS_UPDATED = "2026/10/9 18:00:03";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-08-01",
@@ -894,6 +894,14 @@ window.SCRAPED_EVENTS = [
     "date": "2026-11-24",
     "venue": "jingu",
     "title": "明治神宮外苑創建百年記念　第五十七回　明治神宮野球大会",
+    "open": null,
+    "start": null,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-11-28",
+    "venue": "jingu",
+    "title": "ファン感謝DAY 2026 presented by マイナビ",
     "open": null,
     "start": null,
     "dur": 1.5
