@@ -1,6 +1,6 @@
-// 自動生成 — 2026/10/12 18:00:02
+// 自動生成 — 2026/10/13 18:00:03
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/10/12 18:00:02";
+window.SCRAPED_EVENTS_UPDATED = "2026/10/13 18:00:03";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-08-01",
@@ -691,6 +691,22 @@ window.SCRAPED_EVENTS = [
     "dur": 4
   },
   {
+    "date": "2026-10-16",
+    "venue": "mufg",
+    "title": "｢東京レガシースタジアム2026」開催！",
+    "open": null,
+    "start": null,
+    "dur": null
+  },
+  {
+    "date": "2026-10-16",
+    "venue": "mufg",
+    "title": "東京レガシーハーフマラソンEXPO 2026",
+    "open": null,
+    "start": null,
+    "dur": null
+  },
+  {
     "date": "2026-10-17",
     "venue": "jingu",
     "title": "東京六大学野球秋季リーグ戦",
@@ -699,12 +715,36 @@ window.SCRAPED_EVENTS = [
     "dur": 4
   },
   {
+    "date": "2026-10-17",
+    "venue": "mufg",
+    "title": "東京レガシーハーフマラソンEXPO 2026",
+    "open": null,
+    "start": null,
+    "dur": null
+  },
+  {
     "date": "2026-10-18",
     "venue": "jingu",
     "title": "東京六大学野球秋季リーグ戦",
     "open": 10.5,
     "start": 11,
     "dur": 4
+  },
+  {
+    "date": "2026-10-18",
+    "venue": "mufg",
+    "title": "｢東京レガシースタジアム2026」開催！",
+    "open": null,
+    "start": null,
+    "dur": null
+  },
+  {
+    "date": "2026-10-18",
+    "venue": "mufg",
+    "title": "｢東京レガシーハーフマラソン2026」YouTubeライブ配信決定！",
+    "open": null,
+    "start": null,
+    "dur": null
   },
   {
     "date": "2026-10-20",
@@ -769,6 +809,22 @@ window.SCRAPED_EVENTS = [
     "open": 11,
     "start": 11.5,
     "dur": 4.5
+  },
+  {
+    "date": "2026-11-02",
+    "venue": "jingu",
+    "title": "東都大学秋季入替戦",
+    "open": 8.5,
+    "start": 9,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-11-03",
+    "venue": "jingu",
+    "title": "東都大学秋季入替戦",
+    "open": 8.5,
+    "start": 9,
+    "dur": 1.5
   },
   {
     "date": "2026-11-05",
