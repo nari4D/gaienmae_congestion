@@ -1,6 +1,6 @@
-// 自動生成 — 2026/10/13 18:00:03
+// 自動生成 — 2026/10/14 18:00:03
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/10/13 18:00:03";
+window.SCRAPED_EVENTS_UPDATED = "2026/10/14 18:00:03";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-08-01",
@@ -745,6 +745,14 @@ window.SCRAPED_EVENTS = [
     "open": null,
     "start": null,
     "dur": null
+  },
+  {
+    "date": "2026-10-19",
+    "venue": "mufg",
+    "title": "【10月19日開催】KOKURiTSU NEXT CLEAN ACTION",
+    "open": 9,
+    "start": 10,
+    "dur": 2.5
   },
   {
     "date": "2026-10-20",
