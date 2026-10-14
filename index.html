@@ -409,6 +409,9 @@ const MANUAL_EVENTS = [
   ['2026-10-20','seinen','THE ALUCARD SHOW 夜',18,18.5,2.5],
   ['2026-10-21','seinen','THE ALUCARD SHOW',18,18.5,2.5],
   ['2026-10-22','seinen','THE ALUCARD SHOW',13,13.5,2.5],
+  ['2026-10-16','mufg','東京レガシーハーフマラソンEXPO 2026',11,11,10],
+  ['2026-10-17','mufg','東京レガシーハーフマラソンEXPO 2026',10,10,10],
+  ['2026-10-18','mufg','東京レガシーハーフマラソン2026',7,8+5/60,3],
   ['2026-10-24','seinen','STARCHILD 45th ANNIVERSARY コンサート',17,18,2.5],
   ['2026-10-25','seinen','STARCHILD 45th ANNIVERSARY コンサート',14,15,2.5],
   ['2026-10-30','seinen','ヘタリア World☆Starts',17.5,18,2.5],
@@ -487,9 +490,15 @@ const FALLBACK_EVENTS = [
   {date:'2026-04-30',venue:'jingu',title:'東京ヤクルト vs 阪神',open:17,start:18,dur:3},
 ];
 
+// 自動取得分のうち MANUAL_EVENTS で時刻を補ったもの (毎日の上書きで時刻未掲載に戻らないよう除外)
+const SCRAPED_HIDE = [
+  { venue: 'mufg', dates: ['2026-10-16', '2026-10-17', '2026-10-18'], title: 'レガシー' },
+];
+const isHidden = e => SCRAPED_HIDE.some(r => r.venue === e.venue && r.dates.includes(e.date) && e.title.includes(r.title));
+
 // events.js (scraper.js の出力) が読み込まれていればそちらを使用、なければフォールバック
 const ALL_EVENTS = [
-  ...(window.SCRAPED_EVENTS || FALLBACK_EVENTS),
+  ...(window.SCRAPED_EVENTS || FALLBACK_EVENTS).filter(e => !isHidden(e)),
   ...MANUAL_EVENTS,
 ];
 
