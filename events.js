@@ -1,6 +1,6 @@
-// 自動生成 — 2026/10/14 18:00:03
+// 自動生成 — 2026/10/15 18:00:02
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/10/14 18:00:03";
+window.SCRAPED_EVENTS_UPDATED = "2026/10/15 18:00:02";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-08-01",
@@ -691,6 +691,14 @@ window.SCRAPED_EVENTS = [
     "dur": 4
   },
   {
+    "date": "2026-10-15",
+    "venue": "jingu",
+    "title": "東都大学野球秋季リーグ戦",
+    "open": 11.5,
+    "start": 12,
+    "dur": 4
+  },
+  {
     "date": "2026-10-16",
     "venue": "mufg",
     "title": "｢東京レガシースタジアム2026」開催！",
@@ -782,7 +790,7 @@ window.SCRAPED_EVENTS = [
     "date": "2026-10-24",
     "venue": "rugby",
     "title": "リポビタンDチャレンジカップ2026 日本ラグビーフットボール協会設立100周年記念試合男子日本代表 vs フィジー代表女子日本代表 vs ウェールズ代表",
-    "open": 14.333333333333334,
+    "open": 12.833333333333334,
     "start": 14.833333333333334,
     "dur": 5.666666666666666
   },
@@ -814,7 +822,7 @@ window.SCRAPED_EVENTS = [
     "date": "2026-11-01",
     "venue": "rugby",
     "title": "関東大学ラグビー対抗戦帝京大学 vs 早稲田大学明治大学 vs 慶應義塾大学",
-    "open": 11,
+    "open": 10.5,
     "start": 11.5,
     "dur": 4.5
   },
@@ -833,6 +841,14 @@ window.SCRAPED_EVENTS = [
     "open": 8.5,
     "start": 9,
     "dur": 1.5
+  },
+  {
+    "date": "2026-11-03",
+    "venue": "rugby",
+    "title": "第3回7人制デフラグビー世界大会",
+    "open": 9.5,
+    "start": 10,
+    "dur": 2
   },
   {
     "date": "2026-11-05",
@@ -862,7 +878,7 @@ window.SCRAPED_EVENTS = [
     "date": "2026-11-08",
     "venue": "rugby",
     "title": "全国高等学校ラグビーフットボール大会 東京都予選【決勝】",
-    "open": 11,
+    "open": 10.5,
     "start": 11.5,
     "dur": 3.833333333333334
   },
@@ -894,7 +910,7 @@ window.SCRAPED_EVENTS = [
     "date": "2026-11-15",
     "venue": "rugby",
     "title": "トップイーストリーグJR東日本レールウェイズ vs 大塚刷毛製造 BRUSHES日立Sun Nexus茨城 vs 富士フイルムBIグリーンエルクス",
-    "open": 11,
+    "open": 10.5,
     "start": 11.5,
     "dur": 4.5
   },
@@ -934,7 +950,7 @@ window.SCRAPED_EVENTS = [
     "date": "2026-11-22",
     "venue": "rugby",
     "title": "関東大学ラグビー対抗戦帝京大学 vs 明治大学",
-    "open": 12.5,
+    "open": 12,
     "start": 13,
     "dur": 6
   },
@@ -950,7 +966,7 @@ window.SCRAPED_EVENTS = [
     "date": "2026-11-23",
     "venue": "rugby",
     "title": "関東大学ラグビー対抗戦慶應義塾大学 vs 早稲田大学",
-    "open": 13.5,
+    "open": 12,
     "start": 14,
     "dur": 6
   },
@@ -974,7 +990,7 @@ window.SCRAPED_EVENTS = [
     "date": "2026-11-29",
     "venue": "rugby",
     "title": "関東大学ラグビーリーグ戦関東学院大学 vs 流通経済大学東海大学 vs 東洋大学",
-    "open": 11,
+    "open": 10.5,
     "start": 11.5,
     "dur": 4.5
   },
@@ -982,8 +998,16 @@ window.SCRAPED_EVENTS = [
     "date": "2026-12-05",
     "venue": "rugby",
     "title": "トップイーストリーグ明治安田ホーリーズ vs クリーンファイターズ山梨横河武蔵野アトラスターズ vs 東京ガス ブルーフレイムス",
-    "open": 11,
+    "open": 10.5,
     "start": 11.5,
     "dur": 4.5
+  },
+  {
+    "date": "2026-12-26",
+    "venue": "rugby",
+    "title": "NTTジャパンラグビー リーグワン 2026-27 DIVISION.1 第3節S東京ベイ vs 浦安DR",
+    "open": 14,
+    "start": 14.5,
+    "dur": 2
   }
 ];
