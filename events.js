@@ -1,6 +1,6 @@
-// 自動生成 — 2026/10/16 18:00:03
+// 自動生成 — 2026/10/17 18:00:03
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/10/16 18:00:03";
+window.SCRAPED_EVENTS_UPDATED = "2026/10/17 18:00:03";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-08-01",
@@ -777,6 +777,22 @@ window.SCRAPED_EVENTS = [
     "open": 8.5,
     "start": 9,
     "dur": 4
+  },
+  {
+    "date": "2026-10-21",
+    "venue": "mufg",
+    "title": "10/21東京V戦 「刀剣乱舞ONLINEｘＪリーグ」コラボイベント開催のお知らせ",
+    "open": null,
+    "start": null,
+    "dur": null
+  },
+  {
+    "date": "2026-10-21",
+    "venue": "mufg",
+    "title": "10/21 東京V戦にて、色が変わるアルミタンブラーを来場者へプレゼント！",
+    "open": null,
+    "start": null,
+    "dur": null
   },
   {
     "date": "2026-10-24",
