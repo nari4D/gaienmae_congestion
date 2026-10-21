@@ -1,6 +1,6 @@
-// 自動生成 — 2026/10/20 18:00:02
+// 自動生成 — 2026/10/21 18:00:03
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/10/20 18:00:02";
+window.SCRAPED_EVENTS_UPDATED = "2026/10/21 18:00:03";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-08-01",
@@ -1025,6 +1025,30 @@ window.SCRAPED_EVENTS = [
     "open": 10.5,
     "start": 11.5,
     "dur": 4.5
+  },
+  {
+    "date": "2026-12-12",
+    "venue": "rugby",
+    "title": "NTTジャパンラグビー リーグワン 2026-27 DIVISION.1 第1節東京SG vs BR東京",
+    "open": 14.583333333333334,
+    "start": 15.083333333333334,
+    "dur": 2
+  },
+  {
+    "date": "2026-12-13",
+    "venue": "rugby",
+    "title": "NTTジャパンラグビー リーグワン 2026-27 DIVISION.1 第1節S東京ベイ vs 静岡BR",
+    "open": 14,
+    "start": 14.5,
+    "dur": 2
+  },
+  {
+    "date": "2026-12-19",
+    "venue": "rugby",
+    "title": "NTTジャパンラグビー リーグワン 2026-27 DIVISION.1 第2節B武蔵 vs 埼玉WK",
+    "open": 14,
+    "start": 14.5,
+    "dur": 2
   },
   {
     "date": "2026-12-26",
