@@ -1,6 +1,6 @@
-// 自動生成 — 2026/10/23 18:00:03
+// 自動生成 — 2026/10/24 18:00:02
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/10/23 18:00:03";
+window.SCRAPED_EVENTS_UPDATED = "2026/10/24 18:00:02";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-08-01",
@@ -835,6 +835,14 @@ window.SCRAPED_EVENTS = [
     "dur": 4
   },
   {
+    "date": "2026-10-26",
+    "venue": "jingu",
+    "title": "東京六大学野球秋季リーグ戦",
+    "open": 12.5,
+    "start": 13,
+    "dur": 4
+  },
+  {
     "date": "2026-10-31",
     "venue": "jingu",
     "title": "東京六大学野球秋季リーグ戦",
@@ -913,6 +921,38 @@ window.SCRAPED_EVENTS = [
     "open": 10.5,
     "start": 11.5,
     "dur": 3.833333333333334
+  },
+  {
+    "date": "2026-11-09",
+    "venue": "jingu",
+    "title": "東京六大学秋季フレッシュトーナメント",
+    "open": 9.5,
+    "start": 10,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-11-10",
+    "venue": "jingu",
+    "title": "東京六大学秋季フレッシュトーナメント",
+    "open": 9.5,
+    "start": 10,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-11-11",
+    "venue": "jingu",
+    "title": "東京六大学秋季フレッシュトーナメント",
+    "open": 9.5,
+    "start": 10,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-11-12",
+    "venue": "jingu",
+    "title": "東京六大学秋季フレッシュトーナメント",
+    "open": 7.5,
+    "start": 8,
+    "dur": 1.5
   },
   {
     "date": "2026-11-13",
