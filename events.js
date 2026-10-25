@@ -1,6 +1,6 @@
-// 自動生成 — 2026/10/24 18:00:02
+// 自動生成 — 2026/10/25 18:00:02
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/10/24 18:00:02";
+window.SCRAPED_EVENTS_UPDATED = "2026/10/25 18:00:02";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-08-01",
@@ -843,6 +843,14 @@ window.SCRAPED_EVENTS = [
     "dur": 4
   },
   {
+    "date": "2026-10-27",
+    "venue": "jingu",
+    "title": "",
+    "open": 12.5,
+    "start": 13,
+    "dur": 1.5
+  },
+  {
     "date": "2026-10-31",
     "venue": "jingu",
     "title": "東京六大学野球秋季リーグ戦",
@@ -1100,10 +1108,42 @@ window.SCRAPED_EVENTS = [
   },
   {
     "date": "2026-12-26",
+    "venue": "jingu",
+    "title": "NPBジュニアトーナメント KONAMI CUP 2026",
+    "open": 8.25,
+    "start": 8.75,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-12-26",
     "venue": "rugby",
     "title": "NTTジャパンラグビー リーグワン 2026-27 DIVISION.1 第3節S東京ベイ vs 浦安DR",
     "open": 14,
     "start": 14.5,
     "dur": 2
+  },
+  {
+    "date": "2026-12-27",
+    "venue": "jingu",
+    "title": "NPBジュニアトーナメント KONAMI CUP　2026",
+    "open": 8.25,
+    "start": 8.75,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-12-28",
+    "venue": "jingu",
+    "title": "NPBジュニアトーナメント KONAMI CUP 2026",
+    "open": 8.25,
+    "start": 8.75,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-12-29",
+    "venue": "jingu",
+    "title": "NPBジュニアトーナメント KONAMI CUP 2026",
+    "open": 8.25,
+    "start": 8.75,
+    "dur": 1.5
   }
 ];
