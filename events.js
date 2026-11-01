@@ -1,263 +1,7 @@
-// 自動生成 — 2026/10/31 18:00:02
+// 自動生成 — 2026/11/1 18:00:02
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/10/31 18:00:02";
+window.SCRAPED_EVENTS_UPDATED = "2026/11/1 18:00:02";
 window.SCRAPED_EVENTS = [
-  {
-    "date": "2026-08-01",
-    "venue": "jingu",
-    "title": "東京ヤクルト vs 阪神",
-    "open": 17,
-    "start": 18,
-    "dur": 3
-  },
-  {
-    "date": "2026-08-01",
-    "venue": "jingu",
-    "title": "エイジェックカップ 第54回日本リトルシニア日本選手権大会",
-    "open": 7.5,
-    "start": 8,
-    "dur": 1.5
-  },
-  {
-    "date": "2026-08-02",
-    "venue": "jingu",
-    "title": "東京ヤクルト vs 阪神",
-    "open": 17,
-    "start": 18,
-    "dur": 3
-  },
-  {
-    "date": "2026-08-02",
-    "venue": "jingu",
-    "title": "エイジェックカップ 第54回日本リトルシニア日本選手権大会",
-    "open": 7.5,
-    "start": 8,
-    "dur": 1.5
-  },
-  {
-    "date": "2026-08-03",
-    "venue": "jingu",
-    "title": "JINGU STADIUM NIGHT YOGA",
-    "open": 19,
-    "start": 19.5,
-    "dur": 1.5
-  },
-  {
-    "date": "2026-08-03",
-    "venue": "jingu",
-    "title": "エイジェックカップ 第54回日本リトルシニア日本選手権大会",
-    "open": 7.5,
-    "start": 8,
-    "dur": 1.5
-  },
-  {
-    "date": "2026-08-05",
-    "venue": "jingu",
-    "title": "エイジェックカップ 第54回日本リトルシニア日本選手権大会",
-    "open": 8.5,
-    "start": 9,
-    "dur": 1.5
-  },
-  {
-    "date": "2026-08-06",
-    "venue": "jingu",
-    "title": "エイジェックカップ 第54回日本リトルシニア日本選手権大会",
-    "open": 8.5,
-    "start": 9,
-    "dur": 1.5
-  },
-  {
-    "date": "2026-08-08",
-    "venue": "jingu",
-    "title": "2026　神宮外苑花火大会",
-    "open": 19,
-    "start": 19.5,
-    "dur": 1.5
-  },
-  {
-    "date": "2026-08-10",
-    "venue": "jingu",
-    "title": "JINGU STADIUM NIGHT YOGA",
-    "open": 19,
-    "start": 19.5,
-    "dur": 1.5
-  },
-  {
-    "date": "2026-08-11",
-    "venue": "jingu",
-    "title": "東京ヤクルト vs 広島",
-    "open": 17,
-    "start": 18,
-    "dur": 3
-  },
-  {
-    "date": "2026-08-11",
-    "venue": "jingu",
-    "title": "第73回全国高等学校定時制通信制軟式野球大会",
-    "open": 9.666666666666666,
-    "start": 10.166666666666666,
-    "dur": 1.5
-  },
-  {
-    "date": "2026-08-12",
-    "venue": "jingu",
-    "title": "東京ヤクルト vs 広島",
-    "open": 17,
-    "start": 18,
-    "dur": 3
-  },
-  {
-    "date": "2026-08-12",
-    "venue": "jingu",
-    "title": "第73回全国高等学校定時制通信制軟式野球大会",
-    "open": 7.5,
-    "start": 8,
-    "dur": 1.5
-  },
-  {
-    "date": "2026-08-13",
-    "venue": "jingu",
-    "title": "東京ヤクルト vs 広島",
-    "open": 17,
-    "start": 18,
-    "dur": 3
-  },
-  {
-    "date": "2026-08-13",
-    "venue": "jingu",
-    "title": "第73回全国高等学校定時制通信制軟式野球大会",
-    "open": 7.5,
-    "start": 8,
-    "dur": 1.5
-  },
-  {
-    "date": "2026-08-14",
-    "venue": "jingu",
-    "title": "東京ヤクルト vs 横浜DeNA",
-    "open": 17,
-    "start": 18,
-    "dur": 3
-  },
-  {
-    "date": "2026-08-14",
-    "venue": "jingu",
-    "title": "第73回全国高等学校定時制通信制軟式野球大会",
-    "open": 7.5,
-    "start": 8,
-    "dur": 1.5
-  },
-  {
-    "date": "2026-08-15",
-    "venue": "jingu",
-    "title": "東京ヤクルト vs 横浜DeNA",
-    "open": 17,
-    "start": 18,
-    "dur": 3
-  },
-  {
-    "date": "2026-08-15",
-    "venue": "jingu",
-    "title": "第73回全国高等学校定時制通信制軟式野球大会",
-    "open": 7.5,
-    "start": 8,
-    "dur": 1.5
-  },
-  {
-    "date": "2026-08-16",
-    "venue": "jingu",
-    "title": "東京ヤクルト vs 横浜DeNA",
-    "open": 17,
-    "start": 18,
-    "dur": 3
-  },
-  {
-    "date": "2026-08-16",
-    "venue": "jingu",
-    "title": "第73回全国高等学校定時制通信制軟式野球大会",
-    "open": 8.5,
-    "start": 9,
-    "dur": 1.5
-  },
-  {
-    "date": "2026-08-20",
-    "venue": "jingu",
-    "title": "乃木坂46 真夏の全国ツアー2026",
-    "open": null,
-    "start": null,
-    "dur": 1.5
-  },
-  {
-    "date": "2026-08-21",
-    "venue": "jingu",
-    "title": "乃木坂46 真夏の全国ツアー2026",
-    "open": null,
-    "start": null,
-    "dur": 1.5
-  },
-  {
-    "date": "2026-08-22",
-    "venue": "jingu",
-    "title": "乃木坂46 真夏の全国ツアー2026",
-    "open": null,
-    "start": null,
-    "dur": 1.5
-  },
-  {
-    "date": "2026-08-23",
-    "venue": "jingu",
-    "title": "乃木坂46 真夏の全国ツアー2026",
-    "open": null,
-    "start": null,
-    "dur": 1.5
-  },
-  {
-    "date": "2026-08-25",
-    "venue": "jingu",
-    "title": "東京ヤクルト vs 巨人",
-    "open": 17,
-    "start": 18,
-    "dur": 3
-  },
-  {
-    "date": "2026-08-26",
-    "venue": "jingu",
-    "title": "東京ヤクルト vs 巨人",
-    "open": 17,
-    "start": 18,
-    "dur": 3
-  },
-  {
-    "date": "2026-08-27",
-    "venue": "jingu",
-    "title": "東京ヤクルト vs 巨人",
-    "open": 17,
-    "start": 18,
-    "dur": 3
-  },
-  {
-    "date": "2026-08-28",
-    "venue": "jingu",
-    "title": "JINGU STADIUM NIGHT YOGA",
-    "open": 19,
-    "start": 19.5,
-    "dur": 1.5
-  },
-  {
-    "date": "2026-08-28",
-    "venue": "jingu",
-    "title": "第4回エイジェックカップ　中学硬式野球グランドチャンピオンシリーズ",
-    "open": 7.5,
-    "start": 8,
-    "dur": 1.5
-  },
-  {
-    "date": "2026-08-29",
-    "venue": "jingu",
-    "title": "「侍ジャパンU-18壮行試合」 高校日本代表対大学日本代表",
-    "open": 17.5,
-    "start": 18,
-    "dur": 1.5
-  },
   {
     "date": "2026-09-01",
     "venue": "jingu",
@@ -819,14 +563,6 @@ window.SCRAPED_EVENTS = [
     "dur": 4
   },
   {
-    "date": "2026-10-24",
-    "venue": "rugby",
-    "title": "リポビタンDチャレンジカップ2026 日本ラグビーフットボール協会設立100周年記念試合男子日本代表 vs フィジー代表女子日本代表 vs ウェールズ代表",
-    "open": 12.833333333333334,
-    "start": 14.833333333333334,
-    "dur": 5.666666666666666
-  },
-  {
     "date": "2026-10-25",
     "venue": "jingu",
     "title": "東京六大学野球秋季リーグ戦",
@@ -877,10 +613,10 @@ window.SCRAPED_EVENTS = [
   {
     "date": "2026-11-02",
     "venue": "jingu",
-    "title": "東都大学秋季入替戦",
-    "open": 8.5,
-    "start": 9,
-    "dur": 1.5
+    "title": "東京六大学野球秋季リーグ戦",
+    "open": 12.5,
+    "start": 13,
+    "dur": 4
   },
   {
     "date": "2026-11-03",
@@ -897,6 +633,14 @@ window.SCRAPED_EVENTS = [
     "open": 9.5,
     "start": 10,
     "dur": 2
+  },
+  {
+    "date": "2026-11-04",
+    "venue": "jingu",
+    "title": "東都大学秋季入替戦",
+    "open": 8.5,
+    "start": 9,
+    "dur": 1.5
   },
   {
     "date": "2026-11-05",
