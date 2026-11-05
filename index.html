@@ -150,6 +150,16 @@
   .gantt-row.weekend-sat .date-col { color: #2563eb; background: #eff6ff; }
   .gantt-row.weekend-sun .date-col { color: #dc2626; background: #fff1f2; }
   .gantt-row.today .date-col { background: #fef3c7; font-weight: 700; border-left: 3px solid #f59e0b; }
+  .gantt-row.today { position: relative; }
+  /* 固定表示の日付列より手前に出すため、outline ではなく重ねた要素で枠を描く */
+  .gantt-row.today::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border: 1.5px solid #f59e0b;
+    pointer-events: none;
+    z-index: 11;
+  }
 
   .date-col {
     width: 72px;
