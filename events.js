@@ -1,6 +1,6 @@
-// 自動生成 — 2026/11/5 18:00:02
+// 自動生成 — 2026/11/6 18:00:02
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/11/5 18:00:02";
+window.SCRAPED_EVENTS_UPDATED = "2026/11/6 18:00:02";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-09-01",
@@ -673,6 +673,14 @@ window.SCRAPED_EVENTS = [
     "open": 12.5,
     "start": 13,
     "dur": 4
+  },
+  {
+    "date": "2026-11-08",
+    "venue": "mufg",
+    "title": "モバイルオーダー限定！生ビールが半額の500円！",
+    "open": null,
+    "start": null,
+    "dur": null
   },
   {
     "date": "2026-11-08",
