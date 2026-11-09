@@ -1,6 +1,6 @@
-// 自動生成 — 2026/11/8 18:00:02
+// 自動生成 — 2026/11/9 18:00:03
 // 青年館は手動管理 (index.html の MANUAL_EVENTS)
-window.SCRAPED_EVENTS_UPDATED = "2026/11/8 18:00:02";
+window.SCRAPED_EVENTS_UPDATED = "2026/11/9 18:00:03";
 window.SCRAPED_EVENTS = [
   {
     "date": "2026-09-01",
@@ -718,8 +718,8 @@ window.SCRAPED_EVENTS = [
     "date": "2026-11-12",
     "venue": "jingu",
     "title": "東京六大学秋季フレッシュトーナメント",
-    "open": 7.5,
-    "start": 8,
+    "open": 9.5,
+    "start": 10,
     "dur": 1.5
   },
   {
@@ -728,6 +728,14 @@ window.SCRAPED_EVENTS = [
     "title": "JINGU STADIUM 100年ランタン",
     "open": 18.5,
     "start": 19,
+    "dur": 1.5
+  },
+  {
+    "date": "2026-11-13",
+    "venue": "jingu",
+    "title": "東京六大学秋季フレッシュトーナメント",
+    "open": 7.5,
+    "start": 8,
     "dur": 1.5
   },
   {
